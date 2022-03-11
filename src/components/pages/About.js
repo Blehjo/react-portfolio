@@ -7,7 +7,7 @@ const styles = {
     marginRight: '200px'
   },
   title: {
-    marginLeft: '100px'
+    marginLeft: '200px'
   }
 }
 
