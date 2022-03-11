@@ -1,10 +1,23 @@
 import React from 'react';
 
+const styles = {
+  format: {
+    // width: '700px',
+    textAlign: 'justify',
+    marginLeft: '200px',
+    marginRight: '200px'
+    // height: 'auto',
+  },
+  title: {
+    marginLeft: '200px'
+  }
+}
+
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
+      <h1 style={styles.title}>Contact Page</h1>
+      <p style={styles.format}>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
         magna a ultrices. Aenean pellentesque placerat lacus imperdiet

@@ -4,7 +4,7 @@ import { LinkedinFilled, GithubFilled, MailFilled } from '@ant-design/icons'
 const styles = {
     footer: {
         justifyContent: 'space-evenly',
-        fontSize: 100,
+        fontSize: 75,
     },
     margin: {
         margin: 'auto',

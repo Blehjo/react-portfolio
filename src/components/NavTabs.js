@@ -3,7 +3,6 @@ import React from 'react';
 const styles = {
   bleh: {
     textAlign: 'right',
-    color: 'red'
   }
 }
 

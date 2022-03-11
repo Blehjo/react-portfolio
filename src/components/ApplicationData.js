@@ -1,0 +1,17 @@
+const gameJunkeePhotos = ["../assets/gameJunkeePhotos/gamejunkee1.png", "../assets/gameJunkeePhotos/gamejunkee2.png", "../assets/gameJunkeePhotos/gamejunkee3.png"];
+const muvdPhotos = ["../assets/muvdPhotos/muvd1.png", "../assets/muvdPhotos/muvd2.png"];
+const techsterBlogPhotos = ["../assets/techsterBlogPhotos/techsterblog1.png", "../assets/techsterBlogPhotos/techsterblog2.png", "../assets/techsterBlogPhotos/techsterblog3.png"];
+const pwaPhotos = ["../assets/textEditorPhotos/texteditor1.png", "../assets/textEditorPhotos/texteditor2.png"];
+const weatherDashboardPhotos = ["../assets/weatherDashboardPhotos/weatherdashboard.png"];
+const quizPhotos = ["../assets/quizPhotos/quiz1.png", "../assets/quizPhotos/quiz2.png", "../assets/quizPhotos/quiz3.png", "../assets/quizPhotos/quiz4.png", "../assets/quizPhotos/quiz5.png"];
+
+
+
+export const ApplicationData = [
+    { id: 1, applicationTitle: "Game Junkee", applicationImage: gameJunkeePhotos, applicationLink: "https://gamejunkee.herokuapp.com/", github: "https://github.com/Project-2-BJMS/GameJunkee" },
+    { id: 2, applicationTitle: "Muvd", applicationImage: muvdPhotos, applicationLink: "https://coding-p1-g1.github.io/muvd/", github: "https://github.com/coding-p1-g1/muvd" },
+    { id: 3, applicationTitle: "Tech Blog", applicationImage: techsterBlogPhotos, applicationLink: "https://techsterblog.herokuapp.com/", github: "https://github.com/Blehjo/tech-blog" },
+    { id: 4, applicationTitle: "Progressive Web Application", applicationImage: pwaPhotos, applicationLink: "https://online-offline-editor.herokuapp.com/", github: "https://www.github.com/Blehjo/pwa" },
+    { id: 5, applicationTitle: "Weather Dashboard", applicationImage: weatherDashboardPhotos, applicationLink: "https://blehjo.github.io/weather-dashboard/", github: "https://github.com/Blehjo/weather-dashboard" },
+    { id: 6, applicationTitle: "Quiz", applicationImage: quizPhotos, applicationLink: "https://blehjo.github.io/quiz/", github: "https://github.com/Blehjo/quiz/" },
+]
