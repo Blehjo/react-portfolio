@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Application({ images }) {
+export default function Application({ title, images, index }) {
     return (
         <div>
-            {images.map((image, index) => {
-                return <img key={index} src={image}/>
+            {images.map((image) => {
+                return <img key={index} alt={title} src={require(image)}/>
             })}
         </div>
     )

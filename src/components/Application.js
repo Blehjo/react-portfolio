@@ -11,7 +11,7 @@ const styles = {
       height: 'auto',
     },
     title: {
-      justifyContent: 'space-around'
+      textAlign: 'center',
     },
     div: {
         justifyContent: 'space-evenly',
@@ -25,7 +25,7 @@ export default function Application ({ application }) {
     return (
         <div style={styles.format}>
             <h2 style={styles.title}>{applicationTitle}</h2>
-            { applicationImage.length ? <ApplicationImages images={applicationImage}/> : <p>Currently No Photos</p>}
+            { applicationImage.length ? <ApplicationImages index={id} title={applicationTitle} images={applicationImage}/> : <p>Currently No Photos</p>}
             <ul className='nav' style={styles.div}>
                 <li><a href={applicationLink}><PlayCircleFilled/></a></li>
                 <li><a href={github}><GithubFilled/></a></li>

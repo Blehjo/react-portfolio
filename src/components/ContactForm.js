@@ -1,12 +1,11 @@
 export default function ContactForm() {
     return (
-        <div id="contact" className="bg-white">
-            {/* Contact Form */}
-            <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-                {/* Dot graphics */}
+        // <div id="contact" className="bg-white">
+        //     {/* Contact Form */}
+        //     <div className="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
 
-                    {/* Start of inputs */}
-                    <div>
+        //             {/* Start of inputs */}
+        //             <div>
                         <form name="contact" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                             <input type="hidden" name="form-name" value="contact" />
                             {/* First Name */}
@@ -116,8 +115,8 @@ export default function ContactForm() {
                                 </button>
                             </div>
                         </form>
-                    </div>
-            </div>
-        </div>
+        //             </div>
+        //     </div>
+        // </div>
     )
 }

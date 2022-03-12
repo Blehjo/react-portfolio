@@ -1,9 +1,9 @@
-const gameJunkeePhotos = ["../assets/gameJunkeePhotos/gamejunkee1.png", "../assets/gameJunkeePhotos/gamejunkee2.png", "../assets/gameJunkeePhotos/gamejunkee3.png"];
-const muvdPhotos = ["../assets/muvdPhotos/muvd1.png", "../assets/muvdPhotos/muvd2.png"];
-const techsterBlogPhotos = ["../assets/techsterBlogPhotos/techsterblog1.png", "../assets/techsterBlogPhotos/techsterblog2.png", "../assets/techsterBlogPhotos/techsterblog3.png"];
-const pwaPhotos = ["../assets/textEditorPhotos/texteditor1.png", "../assets/textEditorPhotos/texteditor2.png"];
-const weatherDashboardPhotos = ["../assets/weatherDashboardPhotos/weatherdashboard.png"];
-const quizPhotos = ["../assets/quizPhotos/quiz1.png", "../assets/quizPhotos/quiz2.png", "../assets/quizPhotos/quiz3.png", "../assets/quizPhotos/quiz4.png", "../assets/quizPhotos/quiz5.png"];
+const gameJunkeePhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/gameJunkeePhotos/gamejunkee1.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/gameJunkeePhotos/gamejunkee2.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/gameJunkeePhotos/gamejunkee3.png"];
+const muvdPhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/muvdPhotos/muvd1.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/muvdPhotos/muvd2.png"];
+const techsterBlogPhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/techsterBlogPhotos/techsterblog1.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/techsterBlogPhotos/techsterblog2.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/techsterBlogPhotos/techsterblog3.png"];
+const pwaPhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/textEditorPhotos/texteditor1.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/textEditorPhotos/texteditor2.png"];
+const weatherDashboardPhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/weatherDashboardPhotos/weatherdashboard.png",];
+const quizPhotos = ["/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/quizPhotos/quiz1.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/quizPhotos/quiz2.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/quizPhotos/quiz3.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/quizPhotos/quiz4.png", "/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/quizPhotos/quiz5.png"];
 
 
 

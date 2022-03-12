@@ -3,12 +3,12 @@ import ContactForm from '../ContactForm'
 
 const styles = {
   format: {
-    textAlign: 'justify',
-    marginLeft: '600px',
-    marginRight: '600px'
+    textAlign: 'center',
+    margin: 'auto',
   },
   title: {
-    marginLeft: '200px'
+    textAlign: 'center',
+    margin: 'auto'
   }
 }
 
@@ -16,9 +16,9 @@ export default function Contact() {
   return (
     <div>
       <h1 style={styles.title}>Contact Page</h1>
-      <p style={styles.format}>
+      <div style={styles.format}>
         <ContactForm />
-      </p>
+      </div>
     </div>
   );
 }
