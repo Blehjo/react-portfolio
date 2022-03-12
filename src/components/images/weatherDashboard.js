@@ -1,7 +1,7 @@
-import weatherdashboard from '../../assets/weatherDashboardPhotos/weatherdashboard.png';
+const weatherdashboard = 'weatherDashboardPhotos/weatherdashboard';
 
 const weatherDashboardArr = [
-    {photo: weatherdashboard},
+    weatherdashboard,
 ];
 
 export default weatherDashboardArr;

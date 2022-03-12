@@ -1,9 +1,9 @@
-import texteditor1 from '../../assets/textEditorPhotos/texteditor1.png';
-import texteditor2 from '../../assets/textEditorPhotos/texteditor2.png';
+const texteditor1 = 'textEditorPhotos/texteditor1';
+const texteditor2 = 'textEditorPhotos/texteditor2';
 
 const textEditorArr = [
-    {photo: texteditor1},
-    {photo: texteditor2},
+    texteditor1,
+    texteditor2,
 ];
 
 export default textEditorArr;

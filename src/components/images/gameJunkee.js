@@ -1,11 +1,11 @@
-import gameJunkee1 from '../../assets/gameJunkeePhotos/gamejunkee1.png';
-import gameJunkee2 from '../../assets/gameJunkeePhotos/gamejunkee2.png';
-import gameJunkee3 from '../../assets/gameJunkeePhotos/gamejunkee3.png';
+const gameJunkee1 = 'gameJunkeePhotos/gamejunkee1';
+const gameJunkee2 = 'gameJunkeePhotos/gamejunkee2';
+const gameJunkee3 = 'gameJunkeePhotos/gamejunkee3';
 
 const gameJunkeeArr = [
-    {photo: gameJunkee1},
-    {photo: gameJunkee2},
-    {photo: gameJunkee3}
+    gameJunkee1,
+    gameJunkee2,
+    gameJunkee3
 ];
 
 export default gameJunkeeArr;
