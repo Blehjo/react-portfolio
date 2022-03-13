@@ -1,6 +1,36 @@
+import React,  { useRef } from 'react';
+import ValidateForm from '../hooks/formValidation';
+import emailjs from '@emailjs/browser';
+
 export default function ContactForm() {
+    const service = process.env.SERVICE_ID
+    const template = process.env.TEMPLATE_ID
+    const user = process.env.USER
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm(service, template, form.current, user)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+
+        alert("email sent")
+        window.location.reload(false)
+    };
+
+    // final sumbit function
+    const formSubmit = () =>{
+        console.log("callback function when form is submitted!");
+        console.log('form values', values);
+    }
+    // custom hook call
+    const{values, errors, handleChange, handleSumbit} = ValidateForm(formSubmit)
+
     return (
-                        <form name="contact" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                        <form onSubmit={sendEmail} name="contact" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                             <input type="hidden" name="form-name" value="contact" />
                             {/* Name */}
                             <div>
@@ -16,7 +46,9 @@ export default function ContactForm() {
                                         autoComplete="given-name"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                         placeholder='Enter name here'
+                                        onChange={handleChange}
                                     />
+                                    {errors.contactname && <h3 className='red'>{errors.contactname}</h3>}
                                 </div>
                             </div>
                             {/* Last Name */}
@@ -32,7 +64,9 @@ export default function ContactForm() {
                                         autoComplete="femail"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                         placeholder="Enter email address"
+                                        onChange={handleChange}
                                     />
+                                    {errors.email && <h3 className='red'>{errors.email}</h3>}
                                 </div>
                             </div>
 
@@ -49,7 +83,9 @@ export default function ContactForm() {
                                         autoComplete="message"
                                         className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                         placeholder='Talk to me'
+                                        onChange={handleChange}
                                     />
+                                    {errors.message && <h3 className='red'>{errors.message}</h3>}
                                 </div>
                             </div>
 
