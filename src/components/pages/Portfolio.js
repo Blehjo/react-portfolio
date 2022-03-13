@@ -3,14 +3,9 @@ import ApplicationList from '../ApplicationList';
 import {ApplicationData} from '../ApplicationData';
 
 const styles = {
-  format: {
-    textAlign: 'justify',
-    marginLeft: '200px',
-    marginRight: '200px',
-    display: 'inline-block',
-  },
   title: {
-    marginLeft: '200px'
+    marginLeft: '200px',
+    marginBottom: '50px',
   },
   
 }

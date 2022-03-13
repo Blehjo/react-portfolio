@@ -9,12 +9,10 @@ const styles = {
       border: 'solid',
       borderRadius: '1rem',
     },
-    title: {
-      marginLeft: '200px'
-    },
     div: {
-        // margin: '100px',
-        justifyContent: 'space-evenly',
+        display: 'grid',
+        gridTemplateColumns: 'repeat(3, 1fr)',
+        gap: '10px',
     }
 }
 

@@ -9,7 +9,6 @@ const styles = {
     textAlign: 'center',
     fontSize: '16px',
     justifyContent: 'space-evenly'
-    // lineHeight: '28px',
   },
   div: {
     justifyContent: 'space-evenly'
@@ -66,9 +65,6 @@ export default function Resume() {
           <p>MySQL</p>
           <p>SQL</p>
         </div>
-        {/* <div style={styles.four}>
-          <h2>Tools</h2>
-        </div> */}
       </div>
       <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/10B626J9KY8nWtvHhI3TjhpCs8rxeinLI/view?usp=sharing'>Link To Resume</a></p>
     </div>
