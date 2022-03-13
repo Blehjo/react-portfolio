@@ -5,14 +5,6 @@ import techsterBlogArr from './images/techsterBlog';
 import textEditorArr from './images/textEditor';
 import weatherDashboardArr from './images/weatherDashboard';
 
-// const gameJunkeePhotos = gameJunkeeArr;
-// const muvdPhotos = muvdArr;
-// const techsterBlogPhotos = techsterBlogArr;
-// const pwaPhotos = textEditorArr;
-// const weatherDashboardPhotos = weatherDashboardArr;
-// const quizPhotos = quizArr;
-
-
 
 export const ApplicationData = [
     { id: 1, applicationTitle: "Game Junkee", applicationImage: gameJunkeeArr, applicationLink: "https://gamejunkee.herokuapp.com/", github: "https://github.com/Project-2-BJMS/GameJunkee" },

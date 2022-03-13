@@ -3,6 +3,7 @@ import React from 'react';
 const styles = {
   bleh: {
     textAlign: 'right',
+    margin: '0px 200px 0px 0px'
   }
 }
 

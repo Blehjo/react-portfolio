@@ -3,10 +3,9 @@ import { PlayCircleFilled, GithubFilled } from '@ant-design/icons'
 
 const styles = {
     format: {
-      display: 'inline-block',
+    //   display: 'inline-block',
       justifyContent: 'space-between',
       margin: 'auto',
-      border: 'solid',
       width: '200px',
       height: 'auto',
     },

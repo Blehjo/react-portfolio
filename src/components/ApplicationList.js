@@ -4,13 +4,16 @@ const styles = {
     format: {
       display: 'inline-block',
       justifyContent: 'space-evenly',
-      fontSize: '30px'
+      fontSize: '30px',
+      padding: '1rem',
+      border: 'solid',
+      borderRadius: '1rem',
     },
     title: {
       marginLeft: '200px'
     },
     div: {
-        margin: '100px',
+        // margin: '100px',
         justifyContent: 'space-evenly',
     }
 }
