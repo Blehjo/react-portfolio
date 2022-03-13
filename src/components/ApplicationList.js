@@ -2,7 +2,7 @@ import Application from './Application';
 
 const styles = {
     format: {
-      display: 'inline-block',
+    //   display: 'inline-block',
       justifyContent: 'space-evenly',
       fontSize: '30px',
       padding: '1rem',
@@ -11,8 +11,9 @@ const styles = {
     },
     div: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gap: '10px',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gap: '50px',
+        margin: 'auto 200px auto 200px'
     }
 }
 

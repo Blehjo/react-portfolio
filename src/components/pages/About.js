@@ -11,7 +11,8 @@ const styles = {
   },
   div: {
     margin: '50px 0px 50px 200px',
-  }
+    borderRadius: '20px'
+  },
 }
 
 export default function About() {

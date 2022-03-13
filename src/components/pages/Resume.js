@@ -8,7 +8,11 @@ const styles = {
     gridGap: '50rem',
     textAlign: 'center',
     fontSize: '16px',
-    justifyContent: 'space-evenly'
+    justifyContent: 'space-evenly',
+    border: 'solid',
+    borderRadius: '10px',
+    margin: '50px 200px auto 200px',
+    padding: '20px',
   },
   div: {
     justifyContent: 'space-evenly'

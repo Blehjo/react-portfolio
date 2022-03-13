@@ -11,8 +11,8 @@ const styles = {
       textAlign: 'center',
     },
     div: {
-        justifyContent: 'space-evenly',
-        textAlign: 'center',
+      justifyContent: 'space-evenly',
+      textAlign: 'center',
     },
     pictures: {
       overflowY: 'auto',

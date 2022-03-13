@@ -1,5 +1,5 @@
 import React from 'react';
-import { LinkedinFilled, GithubFilled, MailFilled } from '@ant-design/icons'
+import { LinkedinFilled, GithubFilled, MailFilled, } from '@ant-design/icons'
 
 const styles = {
     footer: {
