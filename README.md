@@ -19,6 +19,8 @@
   
   No need to install any dependencies.  You can check out the site at the following address and interact with the elements on the page.
   
+  [My Portfolio](https://blehjo.github.io/react-portfolio/)
+  
   ## Usage 
   
   ![Screen Shot 2022-03-14 at 3 57 00 AM](https://user-images.githubusercontent.com/89440573/158138479-b2b25f3c-78f9-43a3-acbf-18f72f179c47.png)
