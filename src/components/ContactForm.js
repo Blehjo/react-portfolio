@@ -11,7 +11,6 @@ const styles = {
         textAlign: 'center',
         margin: 'auto',
         width: '50%',
-        // padding: '20px'
     },
     div: {
         padding: '20px'
@@ -45,7 +44,7 @@ export default function ContactUs() {
     const formSubmit = () =>{
         console.log("callback function when form is submitted!");
     }
-    // custom hook call
+    
     const{ errors, handleChange } = ValidateForm(formSubmit)
 
     return(

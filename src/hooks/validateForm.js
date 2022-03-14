@@ -2,13 +2,11 @@ import {useState} from 'react'
 import {omit} from 'lodash'
 
 export default function ValidateForm(callback) {
-    // form values
-    const[values, setValues] = useState({});
-    // errors
+
+
     const[errors, setErrors] = useState({});
 
     const validate = (event, name, value) => {
-        // function to valudate each input values
 
         switch(name) {
             case 'contactname':
@@ -23,7 +21,7 @@ export default function ValidateForm(callback) {
                 }
                 break;
             case 'email':
-                if(!new RegExp( /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/).test(value)
+                if(!new RegExp( /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z\.]{2,6})$/).test(value)
                 ){
                     setErrors({
                         ...errors,
@@ -50,33 +48,17 @@ export default function ValidateForm(callback) {
         }
     }
 
-    // method to handle form inputs
     const handleChange = (event)=> {
-        // To stop default events
         event.persist();
         let name = event.target.name;
         let val = event.target.value;
 
         validate(event, name, val);
-        // Let's set these values in state
+  
+    }
 
-        setValues({
-            ...values,
-            [name]:val,
-        })
-    }
-    const handleSubmit = (event)=>{
-        if(event) event.preventDefault();
-        if(Object.keys(errors).length === 0 && Object.keys(values).length !==0){
-            callback();
-        }else{
-            alert('There is an error')
-        }
-    }
     return{
-        values,
         errors,
         handleChange,
-        handleSubmit
     }
 }

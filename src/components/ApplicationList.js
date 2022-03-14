@@ -2,7 +2,6 @@ import Application from './Application';
 
 const styles = {
     format: {
-    //   display: 'inline-block',
       justifyContent: 'space-evenly',
       fontSize: '30px',
       padding: '1rem',
