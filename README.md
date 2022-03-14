@@ -21,6 +21,14 @@
   
   ## Usage 
   
+  ![Screen Shot 2022-03-14 at 3 57 00 AM](https://user-images.githubusercontent.com/89440573/158138479-b2b25f3c-78f9-43a3-acbf-18f72f179c47.png)
+
+  ![Screen Shot 2022-03-14 at 3 57 16 AM](https://user-images.githubusercontent.com/89440573/158138491-2615a720-d6e0-4faf-b77d-01185c6a4c3a.png)
+  
+  ![Screen Shot 2022-03-14 at 3 57 27 AM](https://user-images.githubusercontent.com/89440573/158138513-ef1dee73-5d87-4a67-a108-deaecadeceba.png)
+
+  ![Screen Shot 2022-03-14 at 3 57 42 AM](https://user-images.githubusercontent.com/89440573/158138525-e9929fa0-3a35-40e4-ab81-7d5c8f38b577.png)
+
   *Instructions and examples for use:*
   
   The language used in this application is react js. I used designs from @antdesign and functionality from emailjs.
