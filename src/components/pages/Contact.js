@@ -7,8 +7,8 @@ const styles = {
     margin: 'auto',
   },
   title: {
-    textAlign: 'center',
-    margin: 'auto auto 50px auto'
+    // textAlign: 'center',
+    margin: 'auto auto 50px 200px'
   }
 }
 
