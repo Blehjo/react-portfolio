@@ -4,7 +4,10 @@ const styles = {
   format: {
     textAlign: 'justify',
     marginLeft: '200px',
-    marginRight: '200px'
+    marginRight: '200px',
+    border: 'solid',
+    borderRadius: '10px',
+    padding: '20px'
   },
   title: {
     marginLeft: '200px'
