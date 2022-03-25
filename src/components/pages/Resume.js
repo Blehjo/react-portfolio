@@ -18,13 +18,13 @@ const styles = {
     padding: '10px',
     border: 'solid',
     borderRadius: '10px',
-    width: '50%'
+    width: '25%'
   },
   row: {
     content: '',
     display: 'table',
     clear: 'both',
-    width: '50%',
+    width: '100%',
     margin: 'auto'
   },
   medium: {
