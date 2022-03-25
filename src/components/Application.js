@@ -17,7 +17,11 @@ const styles = {
     pictures: {
       overflowY: 'auto',
       height: '189px',
-    }
+    },
+    icons: {
+      fontSize: '50px',
+      height: 'auto'
+  }
 }
 
 export default function Application ({ application }) {
@@ -27,8 +31,8 @@ export default function Application ({ application }) {
             <h2 style={styles.title}>{applicationTitle}</h2>
             { applicationImage.length ? <div style={styles.pictures}><ApplicationImages index={id} title={applicationTitle} images={applicationImage}/></div> : <p>Currently No Photos</p>}
             <ul className='nav' style={styles.div}>
-                <li><a href={applicationLink} target='_blank' rel="noreferrer"><PlayCircleFilled/></a></li>
-                <li><a href={github} target='_blank' rel="noreferrer"><GithubFilled/></a></li>
+                <li><a href={applicationLink} target='_blank' rel="noreferrer" style={styles.icons}><PlayCircleFilled/></a></li>
+                <li><a href={github} target='_blank' rel="noreferrer" style={styles.icons}><GithubFilled/></a></li>
             </ul>
         </div>
     )

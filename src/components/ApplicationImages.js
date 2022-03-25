@@ -7,7 +7,7 @@ const styles = {
 }
 
 
-export default function Application({ title, images, index }) {
+export default function ApplicationImages({ title, images, index }) {
     return (
         <div >
             {images.map((image) => {
