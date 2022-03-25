@@ -14,19 +14,21 @@ const styles = {
   },
   column: {
     float: 'left',
-    width: '25%',
+    textAlign: 'center',
     padding: '10px',
     border: 'solid',
     borderRadius: '10px',
-    margin: 'auto',
+    width: '50%'
   },
   row: {
+    content: '',
     display: 'table',
     clear: 'both',
-    
+    width: '50%',
+    margin: 'auto'
   },
   medium: {
-    justifyContent: 'center',
+    // justifyContent: 'center',
     width: '50%',
     margin: 'auto',
   },
@@ -37,9 +39,8 @@ export default function Resume() {
     <div>
       <h1 style={styles.title}>Resume</h1>
       <h2 style={styles.page}>Proficiencies</h2>
-      <div style={styles.format}>
-        <div style={styles.medium}>
-          <div style={styles.row}>
+      <div style={styles.medium}>
+        <div style={styles.row}>
             <div style={styles.column}>
               <h2>Front-End</h2>
               <p>React JS</p>
@@ -68,7 +69,6 @@ export default function Resume() {
               <p>Git</p>
               <p>User Authentication</p>
             </div>
-          </div>
         </div>
       </div>
       <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1RzTPs0lmMgACZkO-pLH_rDCNbL_Lc238/view?usp=sharing'>Link To Resume</a></p>
