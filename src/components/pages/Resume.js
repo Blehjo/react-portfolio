@@ -71,7 +71,7 @@ export default function Resume() {
             </div>
         </div>
       </div>
-      <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1RzTPs0lmMgACZkO-pLH_rDCNbL_Lc238/view?usp=sharing'>Link To Resume</a></p>
+      <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/13AxYIVi1otxb5azpbKXkUbdIq24EpL58/view?usp=sharing'>Link To Resume</a></p>
     </div>
   );
 }
