@@ -1,5 +1,6 @@
-import React from 'react';
-import ContactForm from '../ContactForm'
+import React, { Fragment } from 'react';
+import { Outlet } from 'react-router-dom';
+import ContactForm from '../components/ContactForm'
 
 const styles = {
   format: {
@@ -13,11 +14,12 @@ const styles = {
 
 export default function Contact() {
   return (
-    <div>
+    <Fragment>
       <h1 style={styles.title}>Contact Page</h1>
       <div style={styles.format}>
         <ContactForm />
       </div>
-    </div>
+      <Outlet/>
+    </Fragment>
   );
 }

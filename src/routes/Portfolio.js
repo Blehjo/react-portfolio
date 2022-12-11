@@ -1,7 +1,8 @@
-import React from 'react';
-import ApplicationList from '../ApplicationList';
-import {ApplicationData} from '../ApplicationData';
-import Polari from '../Polari'
+import { Fragment } from 'react';
+import ApplicationList from '../components/ApplicationList';
+import {ApplicationData} from '../components/ApplicationData';
+import Polari from '../components/Polari'
+import { Outlet } from 'react-router-dom';
 
 const styles = {
   page: {
@@ -23,7 +24,7 @@ const styles = {
 
 export default function Portfolio() {
   return (
-    <div style={styles.pa}>
+    <Fragment style={styles.page}>
       <h1 style={styles.title}>Portfolio</h1>
       <div style={styles.polari}>
         <Polari/>
@@ -31,6 +32,7 @@ export default function Portfolio() {
       <div>
         <ApplicationList data={ApplicationData}/>
       </div>
-    </div>
+      <Outlet/>
+    </Fragment>
   );
 }

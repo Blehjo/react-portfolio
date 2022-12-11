@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { Outlet } from 'react-router-dom';
 
 const styles = {
   format: {
@@ -36,7 +37,7 @@ const styles = {
 
 export default function Resume() {
   return (
-    <div>
+    <Fragment>
       <h1 style={styles.title}>Resume</h1>
       <h2 style={styles.page}>Proficiencies</h2>
       <div style={styles.medium}>
@@ -72,6 +73,7 @@ export default function Resume() {
         </div>
       </div>
       <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1o2yBTDF3RYsgWMEvibkVeEGmdHjpVEHV/view?usp=sharing'>Link To Resume</a></p>
-    </div>
+      <Outlet/>
+    </Fragment>
   );
 }
