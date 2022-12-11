@@ -4,12 +4,9 @@ import { ApplicationData } from './ApplicationData';
 import ContactForm from './ContactForm';
 import { GithubFilled, GlobalOutlined} from '@ant-design/icons';
 
-import PolariCard from './PolariCard';
-
 const TabPages = () => {
     return (
         <Tabs
-        style={{ width: '50%'}} lg={8}
         defaultActiveKey="applications"
         id="justify-tab-example"
         className="mb-3"
@@ -46,9 +43,9 @@ const TabPages = () => {
             <Tab eventKey="longer-tab" title="Tech Stack">
             Goodmorning
             </Tab>
-            <Tab eventKey="contact" title="Contact">
+            {/* <Tab eventKey="contact" title="Contact">
                 <ContactForm />
-            </Tab>
+            </Tab> */}
         </Tabs>
     );
 }

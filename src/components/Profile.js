@@ -1,40 +1,70 @@
 import { Fragment } from "react";
 import { Card, Col, ListGroup, Row } from "react-bootstrap";
 import { LinkedinFilled, GithubFilled, MailFilled} from '@ant-design/icons';
-// import TabPages from "./TabPages";
-
-import { Routes, Route } from 'react-router-dom';
-
-// import NavTabs from "./components/NavTabs";
-import About from "../routes/About";
-import Portfolio from "../routes/Portfolio";
-import Resume from "../routes/Resume";
-import Contact from "../routes/Contact";
-// import Profile from './components/Profile';
-import TabPages from '../components/TabPages';
+import { Outlet } from "react-router";
 
 const Profile = () => {
     return (
         <Fragment>
             <Row style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
-                <Col md={4} lg={4} xl={3}>
+                <Col md={6} lg={5} xl={4}>
                     <Card>
                         <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
                         <Card.Body>
                             <Card.Title>Bleh Seton</Card.Title>
-                            <Card.Text>Chicago, Illinois</Card.Text>
-                            <Card.Link href='mailto:blehjooo@gmail.com'>bseton11@gmail.com</Card.Link>
+                            <Card.Text>Chicago, Illinois</Card.Text> 
                             <Card.Subtitle>Main Expertise</Card.Subtitle>
-                            <Card.Body>
-                                <Card>React</Card>
-                                <Card>Javascript</Card>
-                                <Card>C#</Card>
-                                <Card>.NET</Card>
-                                <Card>ASP.NET</Card>
-                                <Card>MVC</Card>
-                            </Card.Body>
+                                <Card style={{ margin: '1rem' }}>
+                                    <Row>
+                                        <Col lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                                        </Col>
+                                        <Col lg={8} xl={8}>
+                                            <Card.Title>React</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card style={{ margin: '1rem' }}>
+                                    <Row>
+                                        <Col lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+                                        </Col>
+                                        <Col lg={8} xl={8}>
+                                            <Card.Title>C#</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card style={{ margin: '1rem' }}>
+                                    <Row>
+                                        <Col lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                                        </Col>
+                                        <Col lg={8} xl={8}>
+                                            <Card.Title>Javascript</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card style={{ margin: '1rem' }}>
+                                    <Row>
+                                        <Col lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                        </Col>
+                                        <Col lg={8} xl={8}>
+                                            <Card.Title>.NET</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card style={{ margin: '1rem' }}>
+                                    <Row>
+                                        <Col lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                        </Col>
+                                        <Col lg={8} xl={8}>
+                                            <Card.Title>ASP.NET</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card>
                             <ListGroup defaultActiveKey="#link1" variant="flush">
-                                <ListGroup.Item href="/"action>Home</ListGroup.Item>
                                 <ListGroup.Item action href="/about">About</ListGroup.Item>
                                 <ListGroup.Item action href="/portfolio">Applications</ListGroup.Item>
                                 <ListGroup.Item action href='/resume'>Knowledge</ListGroup.Item>
@@ -50,8 +80,9 @@ const Profile = () => {
                         </Card.Footer>
                     </Card>
                 </Col>
-                {/* <Col md={8} lg={8} xl={9}>
-                </Col> */}
+                <Col md={6} lg={7} xl={8}>
+                    <Outlet/>
+                </Col>
             </Row>
         </Fragment>
     )

@@ -1,78 +1,72 @@
 import React, { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
-
-const styles = {
-  format: {
-    width: 'auto',
-    textAlign: 'center',
-  },
-  page: {
-    textAlign: 'center',
-    margin: '50px'
-  },
-  title: {
-    margin: '0px 0px 0px 200px',
-  },
-  column: {
-    float: 'left',
-    textAlign: 'center',
-    padding: '10px',
-    border: 'solid',
-    borderRadius: '10px',
-    width: '25%'
-  },
-  row: {
-    content: '',
-    display: 'table',
-    clear: 'both',
-    width: '100%',
-    margin: 'auto'
-  },
-  medium: {
-    // justifyContent: 'center',
-    width: '50%',
-    margin: 'auto',
-  },
-}
+import { Card, Row, Col } from 'react-bootstrap';
 
 export default function Resume() {
   return (
     <Fragment>
-      <h1 style={styles.title}>Resume</h1>
-      <h2 style={styles.page}>Proficiencies</h2>
-      <div style={styles.medium}>
-        <div style={styles.row}>
-            <div style={styles.column}>
-              <h2>Front-End</h2>
-              <p>React JS</p>
+      <h1>Knowledge</h1>
+      <Row lg={2} xl={2}>
+        <Col>
+          <Card style={{ margin: '.5rem'}}>
+            <Card.Title>Front-End</Card.Title>
+            <Card.Body>
+              <p>React.js</p>
+              <p>JSX</p>
               <p>Javascript</p>
               <p>CSS</p>
-              <p>HTML</p>
-            </div>
-            <div style={styles.column}>
-              <h2>Back-End</h2>
+              <p>SASS</p>
+              <p>CSS in JS</p>
+              <p>HTML5</p>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card style={{ margin: '.5rem'}}>
+            <Card.Title>Back-End</Card.Title>
+            <Card.Body>
+              <p>C#</p>
+              <p>Node.js</p>
+              <p>Express.js</p>
+              <p>Golang</p>
               <p>Axios</p>
-              <p>Express</p>
-              <p>Node</p>
-              <p>Insomnia</p>
-            </div>
-            <div style={styles.column}>
-              <h2>Databases</h2>
-              <p>MongoDB</p>
-              <p>Mongoose</p>
-              <p>MySQL</p>
+              <p>Linux</p>
+              <p>Command Line Interface</p>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card style={{ margin: '.5rem'}}>
+            <Card.Title>Databases</Card.Title>
+            <Card.Body>
               <p>SQL</p>
-            </div>
-            <div style={styles.column}>
-              <h2>Tools</h2>
-              <p>MERN Stack</p>
-              <p>Heroku</p>
+              <p>NoSQL</p>
+              <p>MySQL</p>
+              <p>SQLite</p>
+              <p>MongoDB</p>
+              <p>GraphQL</p>
+              <p>Apollo</p>
+              <p>AWS</p>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card style={{ margin: '.5rem'}}>
+            <Card.Title>Tools</Card.Title>
+            <Card.Body>
+              <p>Visual Studio</p>
+              <p>Visual Studio Code</p>
+              <p>.NET</p>
+              <p>ASP.NET</p>
+              <p>Azure</p>
+              <p>Bootstrap</p>
+              <p>Xcode</p>
               <p>Git</p>
-              <p>User Authentication</p>
-            </div>
-        </div>
-      </div>
-      <p style={styles.page}><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1o2yBTDF3RYsgWMEvibkVeEGmdHjpVEHV/view?usp=sharing'>Link To Resume</a></p>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+      <p><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1o2yBTDF3RYsgWMEvibkVeEGmdHjpVEHV/view?usp=sharing'>Link To Resume</a></p>
       <Outlet/>
     </Fragment>
   );
