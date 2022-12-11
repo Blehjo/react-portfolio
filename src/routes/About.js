@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div>
       <Row>
-        <Col>
+        <Col lg={4}>
           <h1 >About Page</h1>
           <img width='300px' height='auto' alt='profile' src={require('/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/profilepicture/newprofilepic.jpg')}/>
           <p >

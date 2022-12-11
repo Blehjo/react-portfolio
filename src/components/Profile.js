@@ -1,11 +1,17 @@
 import { Fragment } from "react";
 import { Card, Col, ListGroup, Row } from "react-bootstrap";
 import { LinkedinFilled, GithubFilled, MailFilled} from '@ant-design/icons';
-import TabPages from "./TabPages";
+// import TabPages from "./TabPages";
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
+import { Routes, Route } from 'react-router-dom';
+
+// import NavTabs from "./components/NavTabs";
+import About from "../routes/About";
+import Portfolio from "../routes/Portfolio";
+import Resume from "../routes/Resume";
+import Contact from "../routes/Contact";
+// import Profile from './components/Profile';
+import TabPages from '../components/TabPages';
 
 const Profile = () => {
     return (
@@ -28,25 +34,24 @@ const Profile = () => {
                                 <Card>MVC</Card>
                             </Card.Body>
                             <ListGroup defaultActiveKey="#link1" variant="flush">
-                                <ListGroup.Item href="#link1"action>About Me</ListGroup.Item>
-                                <ListGroup.Item action>Applications</ListGroup.Item>
-                                <ListGroup.Item action>Resume</ListGroup.Item>
-                                <ListGroup.Item action>Contact</ListGroup.Item>
+                                <ListGroup.Item href="/"action>Home</ListGroup.Item>
+                                <ListGroup.Item action href="/about">About</ListGroup.Item>
+                                <ListGroup.Item action href="/portfolio">Applications</ListGroup.Item>
+                                <ListGroup.Item action href='/resume'>Knowledge</ListGroup.Item>
+                                <ListGroup.Item action href='/contact'>Contact</ListGroup.Item>
                             </ListGroup>
                         </Card.Body>
                         <Card.Footer>
                             <small>
                                 <Card.Link href="https://github.com/Blehjo"><GithubFilled /></Card.Link>
                                 <Card.Link href="https://www.linkedin.com/in/bleh-s/"><LinkedinFilled /></Card.Link>
-                                {/* <Card.Link href='https://stackoverflow.com/users/20506079/bleh'><FontAwesomeIcon icon="fa-brands fa-stack-overflow" /></Card.Link> */}
                                 <Card.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Card.Link>
                             </small>
                         </Card.Footer>
                     </Card>
                 </Col>
-                <Col md={8} lg={8} xl={9}>
-                    <TabPages/>
-                </Col>
+                {/* <Col md={8} lg={8} xl={9}>
+                </Col> */}
             </Row>
         </Fragment>
     )

@@ -1,4 +1,5 @@
 import { Fragment, useContext } from 'react';
+import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
 import { Outlet, Link } from 'react-router-dom';
 
 import Profile from './Profile';
@@ -16,54 +17,25 @@ const styles = {
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <Fragment>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            to='/'
-            onClick={() => handlePageChange('About')}
-            // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+    <Navbar sticky='top' bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">Bleh Seton</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="justify-content-end me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
           >
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#blog"
-            onClick={() => handlePageChange('Portfolio')}
-            // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-          >
-            Portfolio
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#blog"
-            onClick={() => handlePageChange('Resume')}
-            // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-          >
-            Resume
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >
-            Contact
-          </a>
-        </li>
-        <h2 style={styles.bleh} >
-          Bleh Seton
-        </h2>
-      </ul>
-      <Outlet/>
-    </Fragment>
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">About</Nav.Link>
+            <Nav.Link href="#action2">Applications</Nav.Link>
+            <Nav.Link href="#action2">Knowledge</Nav.Link>
+            <Nav.Link href="#action2">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

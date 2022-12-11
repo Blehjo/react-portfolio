@@ -9,6 +9,7 @@ import PolariCard from './PolariCard';
 const TabPages = () => {
     return (
         <Tabs
+        style={{ width: '50%'}} lg={8}
         defaultActiveKey="applications"
         id="justify-tab-example"
         className="mb-3"
@@ -42,7 +43,7 @@ const TabPages = () => {
                     </>
                 ))}
             </Tab>
-            <Tab eventKey="longer-tab" title="Loooonger Tab">
+            <Tab eventKey="longer-tab" title="Tech Stack">
             Goodmorning
             </Tab>
             <Tab eventKey="contact" title="Contact">
