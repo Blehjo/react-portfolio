@@ -2,37 +2,12 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import ValidateForm from '../hooks/validateForm';
 
-// const service = process.env.SERVICE_ID;
-// const template = process.env.TEMPLATE_ID;
-// const user = process.env.USER_ID;
-
-const styles = {
-    format: {
-        textAlign: 'center',
-        margin: 'auto',
-        width: '50%',
-    },
-    div: {
-        padding: '20px'
-    },
-    button: {
-        background: 'white',
-        border: 'solid black'
-    },
-    inline: {
-        float: 'left',
-        marginLeft: '200px',
-        borderRadius: '20px',
-
-    }
-}
-
-export default function ContactUs() {
+export default function ContactForm() {
 
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_wi86re4', 'template_dabilli', e.target, 'r5R44dVIpEoAxy1HD')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
@@ -49,24 +24,23 @@ export default function ContactUs() {
 
     return(
         <div>
-            <img style={styles.inline} alt='profile' width='300px' height='auto' src={require('../assets/profilepicture/newprofilepic.jpg')}/>
-            <div style={styles.format}>
+            <div>
                 <div className='container'>
                     <form onSubmit={sendEmail}>
-                        <div style={styles.div} className="col-8 form-group pt-2 mx-auto">
+                        <div  className="col-8 form-group pt-2 mx-auto">
                             <input type="text" className="form-control" placeholder='Name' minLength='2' name="contactname" onChange={handleChange}/>
                             {errors.contactname && <p className='red'>{errors.contactname}</p>}
                         </div>
-                        <div style={styles.div} className='col-8 form-group pt-2 mx-auto'>
+                        <div  className='col-8 form-group pt-2 mx-auto'>
                             <input type='email' className="form-control" placeholder="Email Address" name="email" onChange={handleChange}/>
                             {errors.email && <p className='red'>{errors.email}</p>}
                         </div>
-                        <div style={styles.div} className='col-8 form-group pt-2 mx-auto'>
-                            <input style={styles.div} className='form-control' minLength='2' placeholder='Your message' name='message' onChange={handleChange}></input>
+                        <div  className='col-8 form-group pt-2 mx-auto'>
+                            <input  className='form-control' minLength='2' placeholder='Your message' name='message' onChange={handleChange}></input>
                             {errors.message && <p className='red'>{errors.message}</p>}
                         </div>
                         <div>
-                            <input style={styles.button} type="submit" className="btn btn-info" value="Send Message"/>
+                            <input type="submit" className="btn btn-info" value="Send Message"/>
                         </div>
                         </form>
                 </div>

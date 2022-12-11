@@ -10,9 +10,9 @@ import TabPages from "./TabPages";
 const Profile = () => {
     return (
         <Fragment>
-            <Row style={{ width: '75%', margin: 'auto'}}>
-                <Col lg={4}>
-                    <Card style={{ width: '18rem' }}>
+            <Row style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
+                <Col md={4} lg={4} xl={3}>
+                    <Card>
                         <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
                         <Card.Body>
                             <Card.Title>Bleh Seton</Card.Title>
@@ -44,7 +44,7 @@ const Profile = () => {
                         </Card.Footer>
                     </Card>
                 </Col>
-                <Col lg={8}>
+                <Col md={8} lg={8} xl={9}>
                     <TabPages/>
                 </Col>
             </Row>
