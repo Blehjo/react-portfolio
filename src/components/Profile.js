@@ -1,38 +1,53 @@
 import { Fragment } from "react";
-import { Card, ListGroup } from "react-bootstrap";
+import { Card, Col, ListGroup, Row } from "react-bootstrap";
+import { LinkedinFilled, GithubFilled, MailFilled} from '@ant-design/icons';
+import TabPages from "./TabPages";
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const Profile = () => {
     return (
         <Fragment>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
-                <Card.Body>
-                    <Card.Title>Bleh Seton</Card.Title>
-                    <Card.Text>Chicago, Illinois</Card.Text>
-                    <Card.Subtitle>Main Expertise</Card.Subtitle>
-                    <Card.Body>
-                        <Card>React</Card>
-                        <Card>Javascript</Card>
-                        <Card>C#</Card>
-                        <Card>.NET</Card>
-                        <Card>ASP.NET</Card>
-                        <Card>MVC</Card>
-                    </Card.Body>
-                    <ListGroup defaultActiveKey="#link1" variant="flush">
-                        <ListGroup.Item href="#link1"action>About Me</ListGroup.Item>
-                        <ListGroup.Item action>Applications</ListGroup.Item>
-                        <ListGroup.Item action>Resume</ListGroup.Item>
-                        <ListGroup.Item action>Contact</ListGroup.Item>
-                    </ListGroup>
-                </Card.Body>
-                <Card.Footer>
-                    <small>
-                        <Card.Link href="https://github.com/Blehjo">Github</Card.Link>
-                        <Card.Link href="https://www.linkedin.com/in/bleh-s/">LinkedIn</Card.Link>
-                        <Card.Link href="">Contact</Card.Link>
-                    </small>
-                </Card.Footer>
-            </Card>
+            <Row style={{ width: '75%', margin: 'auto'}}>
+                <Col lg={4}>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
+                        <Card.Body>
+                            <Card.Title>Bleh Seton</Card.Title>
+                            <Card.Text>Chicago, Illinois</Card.Text>
+                            <Card.Link href='mailto:blehjooo@gmail.com'>bseton11@gmail.com</Card.Link>
+                            <Card.Subtitle>Main Expertise</Card.Subtitle>
+                            <Card.Body>
+                                <Card>React</Card>
+                                <Card>Javascript</Card>
+                                <Card>C#</Card>
+                                <Card>.NET</Card>
+                                <Card>ASP.NET</Card>
+                                <Card>MVC</Card>
+                            </Card.Body>
+                            <ListGroup defaultActiveKey="#link1" variant="flush">
+                                <ListGroup.Item href="#link1"action>About Me</ListGroup.Item>
+                                <ListGroup.Item action>Applications</ListGroup.Item>
+                                <ListGroup.Item action>Resume</ListGroup.Item>
+                                <ListGroup.Item action>Contact</ListGroup.Item>
+                            </ListGroup>
+                        </Card.Body>
+                        <Card.Footer>
+                            <small>
+                                <Card.Link href="https://github.com/Blehjo"><GithubFilled /></Card.Link>
+                                <Card.Link href="https://www.linkedin.com/in/bleh-s/"><LinkedinFilled /></Card.Link>
+                                {/* <Card.Link href='https://stackoverflow.com/users/20506079/bleh'><FontAwesomeIcon icon="fa-brands fa-stack-overflow" /></Card.Link> */}
+                                <Card.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Card.Link>
+                            </small>
+                        </Card.Footer>
+                    </Card>
+                </Col>
+                <Col lg={8}>
+                    <TabPages/>
+                </Col>
+            </Row>
         </Fragment>
     )
 }
