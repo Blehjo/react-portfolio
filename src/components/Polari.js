@@ -1,46 +1,82 @@
-import { polariData } from './images/polariData';
+import { ApplicationData } from './ApplicationData';
 import { PlayCircleFilled, GithubFilled } from '@ant-design/icons'
-
-const data = polariData
-const images = polariData.applicationImage
-
-const styles = {
-    pictures: {
-        overflowY: 'auto',
-        height: '555px',
-    },
-    links: {
-        justifyContent: 'space-evenly',
-        textAlign: 'center',
-        padding: '10px'
-    },
-    image: {
-        borderRadius: '10px',
-    },
-    icons: {
-        fontSize: '50px',
-        height: 'auto'
-    }
-}
+import { Card, Row, Col } from 'react-bootstrap';
+import Carousel from 'react-multi-carousel';
+import { Fragment } from 'react';
 
 export default function Polari() {
-    const { id, applicationTitle, applicationImage, applicationLink, github } = data
-    console.log(id)
-    console.log(applicationImage)
     return (
-        <>
-            <h2>Polari</h2>
-            <div>
-                <div style={styles.pictures}>
-                    {images.map((image) => {
-                        return <img style={styles.image} key={id} alt={applicationTitle} src={require(`/Users/blehjo/bootcamp/homework/react-portfolio/src/assets/${image}.png`)} width='92%' height='auto'/>
-                    })}
-                </div>
-            <ul className='nav' style={styles.links}>
-                <li><a href={applicationLink} target='_blank' rel="noreferrer" style={styles.icons}><PlayCircleFilled/></a></li>
-                <li><a href={github} target='_blank' rel="noreferrer" style={styles.icons}><GithubFilled/></a></li>
-            </ul>
-            </div>
-        </>
+        <Fragment>
+            {ApplicationData.map(({ applicationTitle, id, applicationImage, github, applicationLink }) => (
+                <Row key={id} xs={1} sm={1} md={1} lg={1} xl={1} className="g-4 pt-3">
+                    <h1 className="">{applicationTitle}</h1>
+                    <Col >
+                        <Carousel
+                            additionalTransfrom={0}
+                            arrows
+                            autoPlaySpeed={3000}
+                            centerMode={false}
+                            className=""
+                            containerClass="container-with-dots"
+                            dotListClass=""
+                            draggable
+                            focusOnSelect={false}
+                            infinite
+                            itemClass=""
+                            keyBoardControl
+                            minimumTouchDrag={80}
+                            pauseOnHover
+                            renderArrowsWhenDisabled={false}
+                            renderButtonGroupOutside={false}
+                            renderDotsOutside={false}
+                            responsive={{
+                                desktop: {
+                                    breakpoint: {
+                                        max: 3000,
+                                        min: 1024
+                                    },
+                                    items: 4,
+                                    partialVisibilityGutter: 0,
+                                    slidesToSlide: 4
+                                },
+                                mobile: {
+                                    breakpoint: {
+                                        max: 464,
+                                        min: 0
+                                    },
+                                    items: 1,
+                                    partialVisibilityGutter: 30,
+                                    slidesToSlide: 1
+                                },
+                                tablet: {
+                                    breakpoint: {
+                                        max: 1024,
+                                        min: 464
+                                    },
+                                    items: 2,
+                                    partialVisibilityGutter: 30,
+                                    slidesToSlide: 2
+                                }
+                            }}
+                            rewind={false}
+                            rewindWithAnimation={false}
+                            rtl={false}
+                            shouldResetAutoplay
+                            showDots={false}
+                            sliderClass=""
+                            swipeable
+                            >
+                                {/* {applicationImage.map((image) => ( */}
+                                    <Card className="mx-2 bg-dark text-white" key={id}>
+                                        <Card.Link className="event-card card-info"href={`/event/${applicationTitle}`}>
+                                            {/* <Card.Img src={require("../")}/> */}
+                                        </Card.Link>
+                                    </Card>
+                                {/* // ))} */}
+                        </Carousel>
+                    </Col>
+                </Row>
+            ))}
+        </Fragment>
     )
 }
