@@ -1,9 +1,9 @@
-import gameJunkeeArr from './images/gameJunkee';
-import muvdArr from './images/muvd';
-import quizArr from './images/quiz';
+import gameJunkeeArr from '../assets/gameJunkeePhotos/gameJunkee';
+import muvdArr from '../assets/muvdPhotos/muvd';
+import quizArr from '../assets/quizPhotos/quiz';
 // import techsterBlogArr from './images/techsterBlog';
-import textEditorArr from './images/textEditor';
-import weatherDashboardArr from './images/weatherDashboard';
+import textEditorArr from '../assets/textEditorPhotos/textEditor';
+import weatherDashboardArr from '../assets/weatherDashboardPhotos/weatherDashboard';
 
 
 export const ApplicationData = [
