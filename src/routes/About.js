@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Profile from '../components/Profile';
 import { Row, Col, Card } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 

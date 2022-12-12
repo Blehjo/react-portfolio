@@ -1,6 +1,4 @@
-import { Fragment, useContext } from 'react';
-import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
-import { Outlet, Link } from 'react-router-dom';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (

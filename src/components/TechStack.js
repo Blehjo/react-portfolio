@@ -23,7 +23,7 @@ const TechStack = () => {
                 </Col>
                 <Col>
                     <Card>
-                        <Card.Title>Other Expertise</Card.Title>
+                        <Card.Title>Other Skills</Card.Title>
                         <Card.Body>
                             <p>APIs</p>
                             <p>NoSQL</p>

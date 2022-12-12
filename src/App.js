@@ -8,6 +8,7 @@ import Contact from "./routes/Contact";
 import Profile from './components/Profile';
 import TabPages from './components/TabPages';
 import Footer from './components/Footer';
+import ApplicationProfile from './components/ApplicationProfile';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                 <Route path='portfolio' element={<Portfolio />} />
                 <Route path='resume' element={<Resume />} />
                 <Route path='contact' element={<Contact />} />
+                <Route path='application/*' element={<ApplicationProfile />} />
             </Route>
         </Routes>
     );

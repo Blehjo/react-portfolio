@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Card, Col, ListGroup, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import { LinkedinFilled, GithubFilled, MailFilled} from '@ant-design/icons';
 import { Outlet } from "react-router";
 
@@ -8,7 +8,7 @@ const Profile = () => {
         <Fragment>
             <Row style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
                 <Col md={6} lg={5} xl={4}>
-                    <Card>
+                    <Card >
                         <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
                         <Card.Body>
                             <Card.Title>Bleh Seton</Card.Title>
@@ -64,12 +64,12 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card>
-                            <ListGroup defaultActiveKey="#link1" variant="flush">
+                            {/* <ListGroup defaultActiveKey="#link1" variant="flush">
                                 <ListGroup.Item action href="/about">About</ListGroup.Item>
                                 <ListGroup.Item action href="/portfolio">Applications</ListGroup.Item>
                                 <ListGroup.Item action href='/resume'>Knowledge</ListGroup.Item>
                                 <ListGroup.Item action href='/contact'>Contact</ListGroup.Item>
-                            </ListGroup>
+                            </ListGroup> */}
                         </Card.Body>
                         <Card.Footer>
                             <small>

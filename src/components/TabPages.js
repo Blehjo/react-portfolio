@@ -1,7 +1,6 @@
 import { Tab, Tabs} from 'react-bootstrap';
 import { Card, Row, Col } from 'react-bootstrap';
 import { ApplicationData } from './ApplicationData';
-import ContactForm from './ContactForm';
 import { GithubFilled, GlobalOutlined} from '@ant-design/icons';
 import TechStack from './TechStack';
 

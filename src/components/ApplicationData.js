@@ -1,7 +1,7 @@
 import gameJunkeeArr from './images/gameJunkee';
 import muvdArr from './images/muvd';
 import quizArr from './images/quiz';
-import techsterBlogArr from './images/techsterBlog';
+// import techsterBlogArr from './images/techsterBlog';
 import textEditorArr from './images/textEditor';
 import weatherDashboardArr from './images/weatherDashboard';
 
