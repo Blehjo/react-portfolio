@@ -48,6 +48,7 @@ const Education = () => {
                     </Col>
                 </Row>
             ))}
+            <p><a target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1o2yBTDF3RYsgWMEvibkVeEGmdHjpVEHV/view?usp=sharing'>Link To Resume</a></p>
       </Fragment>
     )
 }

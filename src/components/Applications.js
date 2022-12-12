@@ -1,12 +1,12 @@
 import { Fragment, useContext } from 'react';
 import { ApplicationData } from './ApplicationData';
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 import { ApplicationContext } from '../contexts/application.context';
 
-export default function Polari() {
+export default function Applications() {
     const { application, setApplication } = useContext(ApplicationContext);
 
     const handleClickEvent = (evt) => {
@@ -91,5 +91,5 @@ export default function Polari() {
                 </Fragment>
             ))}
         </Fragment>
-    )
+    );
 }

@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import Polari from '../components/Polari'
+import Applications from '../components/Applications';
 import { Outlet } from 'react-router-dom';
 
 export default function Portfolio() {
   return (
     <Fragment>
-      <Polari />
+      <Applications />
       <Outlet/>
     </Fragment>
   );
