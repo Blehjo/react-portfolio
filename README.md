@@ -23,13 +23,29 @@
   
   ## Usage 
   
-  ![Screen Shot 2022-03-14 at 3 57 00 AM](https://user-images.githubusercontent.com/89440573/158138479-b2b25f3c-78f9-43a3-acbf-18f72f179c47.png)
+  &nbsp;
+  > Landing Page
+  ![Landing Page](<img width="1905" alt="landingpage" src="https://user-images.githubusercontent.com/89440573/207226391-e4ecfb9e-d61a-4092-aae5-9e603a9d901e.png">)
 
-  ![Screen Shot 2022-03-14 at 3 57 16 AM](https://user-images.githubusercontent.com/89440573/158138491-2615a720-d6e0-4faf-b77d-01185c6a4c3a.png)
+  &nbsp;
+  > Applications Page
+  ![Applications Page](<img width="1906" alt="applicationspage" src="https://user-images.githubusercontent.com/89440573/207226491-e5f94335-109b-4a44-918a-719a7535017a.png">)
   
-  ![Screen Shot 2022-03-14 at 3 57 27 AM](https://user-images.githubusercontent.com/89440573/158138513-ef1dee73-5d87-4a67-a108-deaecadeceba.png)
+  &nbsp;
+  > Contact Page
+  ![Contact Page](<img width="1903" alt="contactpage" src="https://user-images.githubusercontent.com/89440573/207226589-096fd7aa-1ecc-4a89-87c0-ebd9ec9a2fef.png">)
 
-  ![Screen Shot 2022-03-14 at 3 57 42 AM](https://user-images.githubusercontent.com/89440573/158138525-e9929fa0-3a35-40e4-ab81-7d5c8f38b577.png)
+  &nbsp;
+  > Mobile Landing Page
+  ![Mobile Landing Page](<img width="501" alt="mobilelandingpage" src="https://user-images.githubusercontent.com/89440573/207226695-90dc0bcb-739a-4a3a-8f69-54472dbcb5cc.png">)
+  
+  &nbsp;
+  > Mobile Profile Card
+  ![Mobile Profile Card](<img width="472" alt="mobileprofilecard" src="https://user-images.githubusercontent.com/89440573/207226727-1cb0fdc5-856c-460e-a08a-fb7122f9f469.png">)
+  
+  &nbsp;
+  > Mobile Contact Page
+  ![Mobile Contact Page](<img width="505" alt="mobilecontactpage" src="https://user-images.githubusercontent.com/89440573/207226774-ac0b57a0-0bb9-42cf-a6d2-ff9caef8acef.png">)
 
   *Instructions and examples for use:*
   
