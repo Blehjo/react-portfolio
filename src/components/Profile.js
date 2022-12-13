@@ -6,7 +6,7 @@ import { Outlet } from "react-router";
 const Profile = () => {
     return (
         <Fragment>
-            <Row style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
+            <Row id="mediatoggle" style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
                 <Col style={{ marginBottom: '1rem'}} md={6} lg={5} xl={4}>
                     <Card >
                         <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
