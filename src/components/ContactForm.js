@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 import emailjs from '@emailjs/browser';
 import ValidateForm from '../hooks/validateForm';
 import { Form, Row, Col, Button } from 'react-bootstrap';
+import env from 'react-dotenv';
 
 export default function ContactForm() {
 
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+        emailjs.sendForm(env.REACT_APP_SERVICE_ID, env.REACT_APP_TEMPLATE_ID, e.target, env.REACT_APP_USER_ID)
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
