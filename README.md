@@ -29,7 +29,7 @@
 
   &nbsp;
   > Applications Page
-  ![Applications Page](<img width="1906" alt="applicationspage" src="https://user-images.githubusercontent.com/89440573/207226491-e5f94335-109b-4a44-918a-719a7535017a.png">)
+  ![Applications Page]<img width="1906" alt="applicationspage" src="https://user-images.githubusercontent.com/89440573/207226491-e5f94335-109b-4a44-918a-719a7535017a.png">
   
   &nbsp;
   > Contact Page
