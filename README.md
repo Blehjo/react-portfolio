@@ -25,7 +25,7 @@
   
   &nbsp;
   > Landing Page
-  ![Landing Page](<img width="1905" alt="landingpage" src="https://user-images.githubusercontent.com/89440573/207226391-e4ecfb9e-d61a-4092-aae5-9e603a9d901e.png">)
+  ![Landing Page]<img width="1905" alt="landingpage" src="https://user-images.githubusercontent.com/89440573/207226391-e4ecfb9e-d61a-4092-aae5-9e603a9d901e.png">
 
   &nbsp;
   > Applications Page
@@ -33,19 +33,19 @@
   
   &nbsp;
   > Contact Page
-  ![Contact Page](<img width="1903" alt="contactpage" src="https://user-images.githubusercontent.com/89440573/207226589-096fd7aa-1ecc-4a89-87c0-ebd9ec9a2fef.png">)
+  ![Contact Page]<img width="1903" alt="contactpage" src="https://user-images.githubusercontent.com/89440573/207226589-096fd7aa-1ecc-4a89-87c0-ebd9ec9a2fef.png">
 
   &nbsp;
   > Mobile Landing Page
-  ![Mobile Landing Page](<img width="501" alt="mobilelandingpage" src="https://user-images.githubusercontent.com/89440573/207226695-90dc0bcb-739a-4a3a-8f69-54472dbcb5cc.png">)
+  ![Mobile Landing Page]<img width="501" alt="mobilelandingpage" src="https://user-images.githubusercontent.com/89440573/207226695-90dc0bcb-739a-4a3a-8f69-54472dbcb5cc.png">
   
   &nbsp;
   > Mobile Profile Card
-  ![Mobile Profile Card](<img width="472" alt="mobileprofilecard" src="https://user-images.githubusercontent.com/89440573/207226727-1cb0fdc5-856c-460e-a08a-fb7122f9f469.png">)
+  ![Mobile Profile Card]<img width="472" alt="mobileprofilecard" src="https://user-images.githubusercontent.com/89440573/207226727-1cb0fdc5-856c-460e-a08a-fb7122f9f469.png">
   
   &nbsp;
   > Mobile Contact Page
-  ![Mobile Contact Page](<img width="505" alt="mobilecontactpage" src="https://user-images.githubusercontent.com/89440573/207226774-ac0b57a0-0bb9-42cf-a6d2-ff9caef8acef.png">)
+  ![Mobile Contact Page]<img width="505" alt="mobilecontactpage" src="https://user-images.githubusercontent.com/89440573/207226774-ac0b57a0-0bb9-42cf-a6d2-ff9caef8acef.png">
 
   *Instructions and examples for use:*
   
