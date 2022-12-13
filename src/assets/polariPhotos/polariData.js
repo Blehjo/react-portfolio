@@ -1,15 +1,15 @@
-const polari1 = 'polariPhotos/polari1';
-const polari2 = 'polariPhotos/polari2';
-const polari3 = 'polariPhotos/polari3';
-const polari4 = 'polariPhotos/polari4';
-const polari5 = 'polariPhotos/polari5';
-const polari6 = 'polariPhotos/polari6';
-const polari7 = 'polariPhotos/polari7';
-const polari8 = 'polariPhotos/polari8';
-const polari9 = 'polariPhotos/polari9';
+const polari1 = "1pbqR4-1dCf_uVEYsitXZpTdZIPcWIV51";
+const polari2 = "1FEcWBpsQb-sjqsTsTI-2IMlUjkLa5atZ";
+const polari3 = "1ozJzaJn_poc5zFq-ucwsYOTh3QV-mb6F";
+const polari4 = "17pH9hiDjKhM432AS-iRLUS3_RsqUZuxH";
+const polari5 = "1xN2nZ9DQ0J_9l883KGQOPa5ySWsi_YmN";
+const polari6 = "1fG-yjDtLvgqAW5neyLsInnSC8Uhl9Wo8";
+const polari7 = "15fubt7d1wcCmACDNBQjAUpxVkwQVJQjx";
+const polari8 = "1T9E_ikujFIZ6RxG7-8K55d_hswv2XipT";
+const polari9 = "1xC5L9avzj0dJwEynrIy0zoGV4UrreFCW";
 
 
-const polariArr = [
+export const polariArr = [
     polari1,
     polari2,
     polari3,
@@ -20,7 +20,3 @@ const polariArr = [
     polari8,
     polari9,
 ];
-
-export const polariData = {
-    id: 7, applicationTitle: "Polari", applicationImage: polariArr, applicationLink: "https://polari-attachments.herokuapp.com/", github: "https://github.com/polari-2022" 
-}

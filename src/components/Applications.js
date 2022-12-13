@@ -1,8 +1,9 @@
 import { Fragment, useContext } from 'react';
 import { ApplicationData } from './ApplicationData';
-import { Card } from 'react-bootstrap';
+import { Card, Nav } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { GithubFilled, GlobalOutlined } from "@ant-design/icons";
 
 import { ApplicationContext } from '../contexts/application.context';
 
@@ -14,19 +15,21 @@ export default function Applications() {
         setApplication(evt.target.value);
     };
 
-    const photos = [
-        "https://storage.googleapis.com/pod_public/1300/128652.jpg",
-        "https://storage.googleapis.com/pod_public/1300/128652.jpg",
-        "https://storage.googleapis.com/pod_public/1300/128652.jpg",
-        "https://storage.googleapis.com/pod_public/1300/128652.jpg",
-        "https://storage.googleapis.com/pod_public/1300/128652.jpg",
-    ];
-
     return (
         <Fragment>
             {ApplicationData.map(({ applicationTitle, id, applicationImage, github, applicationLink }) => (
                 <Fragment>
-                <h1 className="">{applicationTitle}</h1>
+                    <Nav style={{ fontSize: '2rem', textDecoration: 'none', color: 'black'}}>
+                        <Nav.Item>
+                            <Nav.Link className="">{applicationTitle}</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined /></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled /></Nav.Link>
+                        </Nav.Item>
+                    </Nav>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
@@ -51,9 +54,9 @@ export default function Applications() {
                                 max: 3000,
                                 min: 1024
                             },
-                            items: 4,
+                            items: 2,
                             partialVisibilityGutter: 0,
-                            slidesToSlide: 4
+                            slidesToSlide: 2
                         },
                         mobile: {
                             breakpoint: {
@@ -82,12 +85,12 @@ export default function Applications() {
                     sliderClass=""
                     swipeable
                     >
-                        {photos.map((image) => (
+                        {applicationImage.map((image) => (
                             <Card className="mx-2 bg-dark text-white">
-                                <Card.Img src={image}/>
+                                <Card.Img height='200' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${image}`} alt={applicationTitle}/>
                             </Card>
                         ))}
-                </Carousel>
+                    </Carousel>
                 </Fragment>
             ))}
         </Fragment>
