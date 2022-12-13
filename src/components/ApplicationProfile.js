@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Card, Button, Nav } from "react-bootstrap";
 
-import { GithubFilled, PlayCircleFilled, BackwardFilled, ArrowLeftOutlined } from "@ant-design/icons";
+import { GithubFilled, PlayCircleFilled, ArrowLeftOutlined } from "@ant-design/icons";
 
 import { ApplicationData } from "./ApplicationData";
 
