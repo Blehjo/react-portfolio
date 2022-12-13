@@ -19,7 +19,7 @@ const App = () => {
                 <Route path='portfolio' element={<Portfolio />} />
                 <Route path='resume' element={<Resume />} />
                 <Route path='contact' element={<Contact />} />
-                <Route path='application/*' element={<ApplicationProfile />} />
+                <Route path='application/:id' element={<ApplicationProfile />} />
             </Route>
         </Routes>
     );

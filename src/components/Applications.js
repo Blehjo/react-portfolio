@@ -1,27 +1,18 @@
-import { Fragment, useContext } from 'react';
+import { Fragment } from 'react';
 import { ApplicationData } from './ApplicationData';
 import { Card, Nav } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { GithubFilled, GlobalOutlined } from "@ant-design/icons";
 
-import { ApplicationContext } from '../contexts/application.context';
-
 export default function Applications() {
-    const { application, setApplication } = useContext(ApplicationContext);
-
-    const handleClickEvent = (evt) => {
-        evt.preventDefault();
-        setApplication(evt.target.value);
-    };
-
     return (
         <Fragment>
             {ApplicationData.map(({ applicationTitle, id, applicationImage, github, applicationLink }) => (
                 <Fragment>
                     <Nav style={{ fontSize: '2rem', textDecoration: 'none', color: 'black'}}>
                         <Nav.Item>
-                            <Nav.Link className="">{applicationTitle}</Nav.Link>
+                            <Nav.Link href={`/application/${id}`}>{applicationTitle}</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined /></Nav.Link>
