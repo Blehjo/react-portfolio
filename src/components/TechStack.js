@@ -4,9 +4,9 @@ import { Row, Col, Card } from "react-bootstrap";
 const TechStack = () => {
     return (
         <Fragment>
-            <Row xs={1} sm={1}>
-                <Col style={{ margin: '1rem' }}>
-                    <Card>
+            <Row xs={1} sm={1} md={1} lg={1} xl={2}>
+                <Col >
+                    <Card style={{ margin: '1rem' }}>
                         <Card.Title>Main Expertise</Card.Title>
                         <Card.Body>
                             <p>React.js</p>
@@ -21,8 +21,8 @@ const TechStack = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col style={{ margin: '1rem' }}>
-                    <Card>
+                <Col >
+                    <Card style={{ margin: '1rem' }}>
                         <Card.Title>Other Skills</Card.Title>
                         <Card.Body>
                             <p>APIs</p>
