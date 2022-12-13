@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         <Fragment>
             <Row style={{ width: '75%', margin: 'auto', marginTop: '3rem', marginBottom: '3rem'}}>
-                <Col md={6} lg={5} xl={4}>
+                <Col style={{ marginBottom: '1rem'}} md={6} lg={5} xl={4}>
                     <Card >
                         <Card.Img variant="top" src={require("../assets/profilepicture/newprofilepic.jpg")} />
                         <Card.Body>
@@ -15,51 +15,51 @@ const Profile = () => {
                             <Card.Text>Chicago, Illinois</Card.Text> 
                             <Card.Subtitle>Main Expertise</Card.Subtitle>
                             <Card style={{ margin: '1rem' }}>
-                                <Row>
-                                    <Col lg={2} xl={2}>
+                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
                                     </Col>
-                                    <Col lg={8} xl={8}>
+                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
                                         <Card.Title>React</Card.Title> 
                                     </Col>
                                 </Row>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row>
-                                    <Col lg={2} xl={2}>
+                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
                                     </Col>
-                                    <Col lg={8} xl={8}>
+                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
                                         <Card.Title>C#</Card.Title> 
                                     </Col>
                                 </Row>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row>
-                                    <Col lg={2} xl={2}>
+                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
                                     </Col>
-                                    <Col lg={8} xl={8}>
+                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
                                         <Card.Title>Javascript</Card.Title> 
                                     </Col>
                                 </Row>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row>
-                                    <Col lg={2} xl={2}>
+                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
                                     </Col>
-                                    <Col lg={8} xl={8}>
+                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
                                         <Card.Title>.NET</Card.Title> 
                                     </Col>
                                 </Row>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row>
-                                    <Col lg={2} xl={2}>
+                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
                                     </Col>
-                                    <Col lg={8} xl={8}>
+                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
                                         <Card.Title>ASP.NET</Card.Title> 
                                     </Col>
                                 </Row>

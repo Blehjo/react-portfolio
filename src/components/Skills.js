@@ -5,7 +5,7 @@ import { Card, Row, Col } from 'react-bootstrap';
 export default function Skills() {
   return (
     <Fragment>
-      <Row md={1} lg={2} xl={2}>
+      <Row xs={1} sm={1} md={1} lg={2} xl={2}>
         <Col>
           <Card style={{ margin: '.5rem'}}>
             <Card.Title>Front-End</Card.Title>

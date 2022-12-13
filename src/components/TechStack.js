@@ -4,8 +4,8 @@ import { Row, Col, Card } from "react-bootstrap";
 const TechStack = () => {
     return (
         <Fragment>
-            <Row>
-                <Col>
+            <Row xs={1} sm={1}>
+                <Col style={{ margin: '1rem' }}>
                     <Card>
                         <Card.Title>Main Expertise</Card.Title>
                         <Card.Body>
@@ -21,7 +21,7 @@ const TechStack = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col style={{ margin: '1rem' }}>
                     <Card>
                         <Card.Title>Other Skills</Card.Title>
                         <Card.Body>
