@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 
-import NavTabs from "./components/NavTabs";
 import About from "./routes/About";
 import Portfolio from "./routes/Portfolio";
 import Resume from "./routes/Resume";
 import Contact from "./routes/Contact";
+
+import NavTabs from "./components/NavTabs";
 import Profile from './components/Profile';
 import TabPages from './components/TabPages';
 import Footer from './components/Footer';
