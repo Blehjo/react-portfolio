@@ -1,28 +1,27 @@
 import { Fragment, useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import { useParams, useNavigate } from "react-router-dom";
+import { Card, Button, Nav } from "react-bootstrap";
 
-import { GithubFilled, PlayCircleFilled } from "@ant-design/icons";
+import { GithubFilled, PlayCircleFilled, BackwardFilled, ArrowLeftOutlined } from "@ant-design/icons";
 
 import { ApplicationData } from "./ApplicationData";
 
 const ApplicationProfile = () => {
+    const navigate = useNavigate();
     const [information, setInformation] = useState([]);
     const { id } = useParams();
     const applications = ApplicationData;
     
     const getApplication = () => {
         const app = applications.find((element) => element.id == id);
-        applications.map((element) => console.log(`${element.applicationTitle}: ${element.id}`))
         setInformation(app);
-        console.log("information variable: ", information);
-        console.log("applications variable:", applications);
-        console.log("id: ", id);
-        console.log("found item: ", app);
+    }
+
+    const handleClickEvent = () => {
+        navigate('/portfolio')
     }
 
     useEffect(() => {
-        // evt.preventDefault();
         getApplication();
     }, [id]);
 
@@ -31,16 +30,24 @@ const ApplicationProfile = () => {
     return (
         <Fragment>
             <Card>
-                <Card.Title>{applicationTitle}</Card.Title>
-                <Card.Img src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+                <Card.Img style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
                 <Card.Body>
+                <Card.Title>{applicationTitle}</Card.Title>
                     <Card.Subtitle>{description}</Card.Subtitle>
                 </Card.Body>
                 <Card.Footer>
-                        <Card.Link href={applicationLink} target='_blank' rel="noreferrer"><PlayCircleFilled/></Card.Link>
-                        <Card.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Card.Link>
+                    <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }}>
+                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><PlayCircleFilled/></Nav.Link>
+                        <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
+                    </Nav>
                 </Card.Footer>
             </Card>
+            <Fragment>
+                <Button style={{margin: '1rem'}} onClick={handleClickEvent}>
+                <ArrowLeftOutlined/>
+                {`    Back To Apps`}
+                </Button>
+            </Fragment>
         </Fragment>
     )
 }

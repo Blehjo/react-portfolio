@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import emailjs from '@emailjs/browser';
 import ValidateForm from '../hooks/validateForm';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 
 export default function ContactForm() {
 
@@ -23,29 +24,35 @@ export default function ContactForm() {
     const{ errors, handleChange } = ValidateForm(formSubmit)
 
     return(
-        <div>
-            <div>
-                <div className='container'>
-                    <form onSubmit={sendEmail}>
-                        <div  className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder='Name' minLength='2' name="contactname" onChange={handleChange}/>
-                            {errors.contactname && <p className='red'>{errors.contactname}</p>}
-                        </div>
-                        <div  className='col-8 form-group pt-2 mx-auto'>
-                            <input type='email' className="form-control" placeholder="Email Address" name="email" onChange={handleChange}/>
-                            {errors.email && <p className='red'>{errors.email}</p>}
-                        </div>
-                        <div  className='col-8 form-group pt-2 mx-auto'>
-                            <input  className='form-control' minLength='2' placeholder='Your message' name='message' onChange={handleChange}></input>
-                            {errors.message && <p className='red'>{errors.message}</p>}
-                        </div>
-                        <div>
-                            <input type="submit" className="btn btn-info" value="Send Message"/>
-                        </div>
-                        </form>
-                </div>
-            </div>
-        </div>
+        <Fragment>
+        <Form onSubmit={sendEmail}>
+            <Row>
+                <Col lg={10} xl={10}>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Control name="contactname" minLength='2' className="form-control" onChange={handleChange} placeholder="Name" type="name" rows={3} />
+                        {errors.contactname && <p className='red'>{errors.contactname}</p>}
+                    </Form.Group>
+                </Col>
+                <Col lg={10} xl={10}>
+                    <Form.Group className="mb-3" controlId="ControlTextarea1">
+                        <Form.Control name="email" className="form-control" onChange={handleChange} placeholder="Email Address" type="email" rows={3} />
+                        {errors.email && <p className='red'>{errors.email}</p>}
+                    </Form.Group>
+                </Col>
+                <Col lg={10} xl={10}>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Control name='message' minLength='5' onChange={handleChange} placeholder="Write your message here" as="textarea" rows={3} />
+                        {errors.message && <p className='red'>{errors.message}</p>}
+                    </Form.Group>
+                </Col>
+                <Col lg={10} xl={10}>
+                    <Button style={{width: '100%', height: '85%'}} variant="primary" type="submit" value="Send Message">
+                        Send Message
+                    </Button>
+                </Col>
+            </Row>
+        </Form>
+        </Fragment>
     )
 
 }

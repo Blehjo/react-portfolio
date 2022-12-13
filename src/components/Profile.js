@@ -14,62 +14,56 @@ const Profile = () => {
                             <Card.Title>Bleh Seton</Card.Title>
                             <Card.Text>Chicago, Illinois</Card.Text> 
                             <Card.Subtitle>Main Expertise</Card.Subtitle>
-                                <Card style={{ margin: '1rem' }}>
-                                    <Row>
-                                        <Col lg={2} xl={2}>
-                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-                                        </Col>
-                                        <Col lg={8} xl={8}>
-                                            <Card.Title>React</Card.Title> 
-                                        </Col>
-                                    </Row>
-                                </Card>
-                                <Card style={{ margin: '1rem' }}>
-                                    <Row>
-                                        <Col lg={2} xl={2}>
-                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
-                                        </Col>
-                                        <Col lg={8} xl={8}>
-                                            <Card.Title>C#</Card.Title> 
-                                        </Col>
-                                    </Row>
-                                </Card>
-                                <Card style={{ margin: '1rem' }}>
-                                    <Row>
-                                        <Col lg={2} xl={2}>
-                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-                                        </Col>
-                                        <Col lg={8} xl={8}>
-                                            <Card.Title>Javascript</Card.Title> 
-                                        </Col>
-                                    </Row>
-                                </Card>
-                                <Card style={{ margin: '1rem' }}>
-                                    <Row>
-                                        <Col lg={2} xl={2}>
-                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-                                        </Col>
-                                        <Col lg={8} xl={8}>
-                                            <Card.Title>.NET</Card.Title> 
-                                        </Col>
-                                    </Row>
-                                </Card>
-                                <Card style={{ margin: '1rem' }}>
-                                    <Row>
-                                        <Col lg={2} xl={2}>
-                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-                                        </Col>
-                                        <Col lg={8} xl={8}>
-                                            <Card.Title>ASP.NET</Card.Title> 
-                                        </Col>
-                                    </Row>
-                                </Card>
-                            {/* <ListGroup defaultActiveKey="#link1" variant="flush">
-                                <ListGroup.Item action href="/about">About</ListGroup.Item>
-                                <ListGroup.Item action href="/portfolio">Applications</ListGroup.Item>
-                                <ListGroup.Item action href='/resume'>Knowledge</ListGroup.Item>
-                                <ListGroup.Item action href='/contact'>Contact</ListGroup.Item>
-                            </ListGroup> */}
+                            <Card style={{ margin: '1rem' }}>
+                                <Row>
+                                    <Col lg={2} xl={2}>
+                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                                    </Col>
+                                    <Col lg={8} xl={8}>
+                                        <Card.Title>React</Card.Title> 
+                                    </Col>
+                                </Row>
+                            </Card>
+                            <Card style={{ margin: '1rem' }}>
+                                <Row>
+                                    <Col lg={2} xl={2}>
+                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+                                    </Col>
+                                    <Col lg={8} xl={8}>
+                                        <Card.Title>C#</Card.Title> 
+                                    </Col>
+                                </Row>
+                            </Card>
+                            <Card style={{ margin: '1rem' }}>
+                                <Row>
+                                    <Col lg={2} xl={2}>
+                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                                    </Col>
+                                    <Col lg={8} xl={8}>
+                                        <Card.Title>Javascript</Card.Title> 
+                                    </Col>
+                                </Row>
+                            </Card>
+                            <Card style={{ margin: '1rem' }}>
+                                <Row>
+                                    <Col lg={2} xl={2}>
+                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                    </Col>
+                                    <Col lg={8} xl={8}>
+                                        <Card.Title>.NET</Card.Title> 
+                                    </Col>
+                                </Row>
+                            </Card>
+                            <Card style={{ margin: '1rem' }}>
+                                <Row>
+                                    <Col lg={2} xl={2}>
+                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                    </Col>
+                                    <Col lg={8} xl={8}>
+                                        <Card.Title>ASP.NET</Card.Title> 
+                                    </Col>
+                                </Row>
+                            </Card>
                         </Card.Body>
                         <Card.Footer>
                             <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }} >

@@ -9,7 +9,7 @@ export default function Applications() {
     return (
         <Fragment>
             {ApplicationData.map(({ applicationTitle, id, applicationImage, github, applicationLink }) => (
-                <Fragment>
+                <Fragment key={id}>
                     <Nav style={{ fontSize: '2rem', textDecoration: 'none', color: 'black'}}>
                         <Nav.Item>
                             <Nav.Link href={`/application/${id}`}>{applicationTitle}</Nav.Link>
@@ -77,7 +77,7 @@ export default function Applications() {
                     swipeable
                     >
                         {applicationImage.map((image) => (
-                            <Card className="mx-2 bg-dark text-white">
+                            <Card key={image} className="mx-2 bg-dark text-white">
                                 <Card.Img height='200' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${image}`} alt={applicationTitle}/>
                             </Card>
                         ))}

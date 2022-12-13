@@ -1,5 +1,5 @@
 import { Tab, Tabs} from 'react-bootstrap';
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col, Nav } from 'react-bootstrap';
 import { ApplicationData } from './ApplicationData';
 import { GithubFilled, GlobalOutlined} from '@ant-design/icons';
 import TechStack from './TechStack';
@@ -19,10 +19,10 @@ const TabPages = () => {
             </Tab>
             <Tab eventKey="featured" title="Featured Applications">
                 {Array.from(ApplicationData).map(({ id, applicationTitle, mainPhoto, description, applicationImage, applicationLink, github }) => (
-                    <Card style={{ margin: '1rem' }}>
+                    <Card key={id} style={{ height: '180', margin: '1rem' }}>
                         <Row lg={2} xl={2}>
                             <Col lg={4} xl={4}>
-                            <Card.Img height='180' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+                            <Card.Img height='210' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
                             </Col>
                             <Col lg={8} xl={8}>
                                 <Card.Body>
@@ -30,8 +30,10 @@ const TabPages = () => {
                                     <Card.Text>{description}</Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Card.Link href={github}><GithubFilled /></Card.Link>
-                                    <Card.Link href={applicationLink}><GlobalOutlined/></Card.Link>
+                                    <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }}>
+                                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
+                                        <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
+                                    </Nav>
                                 </Card.Footer>
                             </Col>
                         </Row>
