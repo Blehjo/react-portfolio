@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
   return (
     <Navbar sticky='top' bg="light" expand="lg">
       <Container>
@@ -9,8 +9,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
           >
             <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="/portfolio">Applications</Nav.Link>

@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import { Card, Col, Row } from "react-bootstrap";
-import { LinkedinFilled, GithubFilled, MailFilled} from '@ant-design/icons';
+import { Card, Col, Row, Nav } from "react-bootstrap";
+import { LinkedinFilled, GithubFilled, MailFilled, PaperClipOutlined } from '@ant-design/icons';
 import { Outlet } from "react-router";
 
 const Profile = () => {
@@ -72,11 +72,12 @@ const Profile = () => {
                             </ListGroup> */}
                         </Card.Body>
                         <Card.Footer>
-                            <small>
-                                <Card.Link href="https://github.com/Blehjo"><GithubFilled /></Card.Link>
-                                <Card.Link href="https://www.linkedin.com/in/bleh-s/"><LinkedinFilled /></Card.Link>
-                                <Card.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Card.Link>
-                            </small>
+                            <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }} >
+                                <Nav.Link target="_blank" rel="noreferrer" href='https://github.com/Blehjo'><GithubFilled /></Nav.Link>
+                                <Nav.Link target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bleh-s/'><LinkedinFilled /></Nav.Link>
+                                <Nav.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Nav.Link>
+                                <Nav.Link target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1tY07qylX8C-UOeua_pUEYZ_uVw7KKIKO/view?usp=share_link'><PaperClipOutlined /></Nav.Link>
+                            </Nav>
                         </Card.Footer>
                     </Card>
                 </Col>
