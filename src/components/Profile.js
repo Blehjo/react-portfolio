@@ -20,7 +20,9 @@ const Profile = () => {
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
                                     </Col>
                                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Title>React</Card.Title> 
+                                        <Card.Link target="_blank" rel="noreferrer" href="https://reactjs.org/">
+                                            <Card.Title>React</Card.Title> 
+                                        </Card.Link>
                                     </Col>
                                 </Row>
                             </Card>
@@ -30,7 +32,9 @@ const Profile = () => {
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
                                     </Col>
                                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Title>C#</Card.Title> 
+                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                            <Card.Title>C#</Card.Title> 
+                                        </Card.Link>
                                     </Col>
                                 </Row>
                             </Card>
@@ -40,7 +44,9 @@ const Profile = () => {
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
                                     </Col>
                                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Title>Javascript</Card.Title> 
+                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                            <Card.Title>Javascript</Card.Title> 
+                                        </Card.Link>
                                     </Col>
                                 </Row>
                             </Card>
@@ -50,7 +56,9 @@ const Profile = () => {
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
                                     </Col>
                                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Title>.NET</Card.Title> 
+                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                            <Card.Title>.NET</Card.Title> 
+                                        </Card.Link>
                                     </Col>
                                 </Row>
                             </Card>
@@ -60,7 +68,9 @@ const Profile = () => {
                                         <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
                                     </Col>
                                     <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Title>ASP.NET</Card.Title> 
+                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                            <Card.Title>ASP.NET</Card.Title> 
+                                        </Card.Link>
                                     </Col>
                                 </Row>
                             </Card>
