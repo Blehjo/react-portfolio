@@ -14,7 +14,7 @@ const TabPages = () => {
         >
             <Tab eventKey="profile" title="Bio">
                 <Card style={{ padding: '3rem'}}>   
-                    Innovative software engineer with a background in public health databases who brings a unique perspective to frameworks for problem solving. Excels in troubleshooting issues with a high level of creativity to get results. Effective at communication not only verbally but as an active listener. Also, utilizes an agile management style to optimize project management. In addition, uses time management to achieve goals and keep on task to hit deadlines.
+                    Innovative software engineer with a background in public health databases who brings a unique perspective to frameworks for problem solving. Excels in troubleshooting issues with a high level of creativity to get results. <br></br><br></br>Effective at communication not only verbally but as an active listener. Also, utilizes an agile management style to optimize project management. In addition, uses time management to achieve goals and keep on task to hit deadlines.
                 </Card>
             </Tab>
             <Tab eventKey="featured" title="Featured Applications">

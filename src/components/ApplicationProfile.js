@@ -1,8 +1,8 @@
 import { Fragment, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Card, Button, Nav } from "react-bootstrap";
+import { Card, Button, Nav, Row, Col } from "react-bootstrap";
 
-import { GithubFilled, PlayCircleFilled, ArrowLeftOutlined } from "@ant-design/icons";
+import { GithubFilled, GlobalOutlined, ArrowLeftOutlined } from "@ant-design/icons";
 
 import { ApplicationData } from "./ApplicationData";
 
@@ -11,19 +11,18 @@ const ApplicationProfile = () => {
     const [information, setInformation] = useState([]);
     const { id } = useParams();
     const applications = ApplicationData;
-    
-    const getApplication = () => {
-        const app = applications.find((element) => element.id == id);
-        setInformation(app);
-    }
 
     const handleClickEvent = () => {
         navigate('/portfolio')
     }
 
     useEffect(() => {
+        const getApplication = () => {
+            const app = applications.find((element) => element.id == id);
+            setInformation(app);
+        }
         getApplication();
-    }, [id]);
+    }, [id, applications]);
 
     const { applicationTitle, mainPhoto, applicationLink, github, description } = information;
 
@@ -37,16 +36,24 @@ const ApplicationProfile = () => {
                 </Card.Body>
                 <Card.Footer>
                     <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }}>
-                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><PlayCircleFilled/></Nav.Link>
+                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
                         <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
                     </Nav>
                 </Card.Footer>
             </Card>
             <Fragment>
-                <Button style={{margin: '1rem'}} onClick={handleClickEvent}>
-                <ArrowLeftOutlined/>
-                {`    Back To Apps`}
-                </Button>
+                    <Button style={{margin: '1rem', paddingRight: '1rem'}} onClick={handleClickEvent}>
+                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                            <ArrowLeftOutlined style={{ fontSize: 50 }} />
+                        </Col>
+                        <Col style={{ alignItems: 'center' }} xs={10} sm={10} md={10} lg={10} xl={10}>
+                            <Card.Title >
+                                Back To Apps
+                            </Card.Title>
+                        </Col>
+                </Row>
+                    </Button>
             </Fragment>
         </Fragment>
     )
