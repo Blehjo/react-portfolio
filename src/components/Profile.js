@@ -15,64 +15,64 @@ const Profile = () => {
                             <Card.Text>Chicago, Illinois</Card.Text> 
                             <Card.Subtitle>Main Expertise</Card.Subtitle>
                             <Card style={{ margin: '1rem' }}>
-                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
-                                    </Col>
-                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Link target="_blank" rel="noreferrer" href="https://reactjs.org/">
-                                            <Card.Title>React</Card.Title> 
-                                        </Card.Link>
-                                    </Col>
-                                </Row>
+                                <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://reactjs.org/">
+                                    <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                                        </Col>
+                                        <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
+                                            <Card.Title style={{ position: 'absolute', top:'0' }}>React</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card.Link>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
-                                    </Col>
-                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                            <Card.Title>C#</Card.Title> 
-                                        </Card.Link>
-                                    </Col>
-                                </Row>
+                                <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://www.javascript.com/">
+                                    <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                                        </Col>
+                                        <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
+                                            <Card.Title style={{ position: 'absolute', top:'0' }}>Javascript</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card.Link>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-                                    </Col>
-                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                            <Card.Title>Javascript</Card.Title> 
-                                        </Card.Link>
-                                    </Col>
-                                </Row>
+                                <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
+                                    <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+                                        </Col>
+                                        <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
+                                            <Card.Title style={{ position: 'absolute', top:'0' }}>C#</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card.Link>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-                                    </Col>
-                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                            <Card.Title>.NET</Card.Title> 
-                                        </Card.Link>
-                                    </Col>
-                                </Row>
+                                <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://dotnet.microsoft.com/en-us/">
+                                    <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                        </Col>
+                                        <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
+                                            <Card.Title style={{ position: 'absolute', top:'0' }}>.NET</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card.Link>
                             </Card>
                             <Card style={{ margin: '1rem' }}>
-                                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                                    <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                                        <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
-                                    </Col>
-                                    <Col xs={8} sm={8} md={8} lg={8} xl={8}>
-                                        <Card.Link target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
-                                            <Card.Title>ASP.NET</Card.Title> 
-                                        </Card.Link>
-                                    </Col>
-                                </Row>
+                                <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://dotnet.microsoft.com/en-us/apps/aspnet">
+                                    <Row xs={2} sm={2} md={2} lg={2} xl={2}>
+                                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
+                                            <Card.Img style={{ width: '1.5rem' }} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+                                        </Col>
+                                        <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
+                                            <Card.Title style={{ position: 'absolute', top:'0' }} >ASP.NET</Card.Title> 
+                                        </Col>
+                                    </Row>
+                                </Card.Link>
                             </Card>
                         </Card.Body>
                         <Card.Footer>
