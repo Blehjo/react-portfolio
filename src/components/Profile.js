@@ -80,7 +80,7 @@ const Profile = () => {
                                 <Nav.Link target="_blank" rel="noreferrer" href='https://github.com/Blehjo'><GithubFilled /></Nav.Link>
                                 <Nav.Link target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bleh-s/'><LinkedinFilled /></Nav.Link>
                                 <Nav.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Nav.Link>
-                                <Nav.Link target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1tY07qylX8C-UOeua_pUEYZ_uVw7KKIKO/view?usp=share_link'><PaperClipOutlined /></Nav.Link>
+                                <Nav.Link target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1eQh9PvQWSuX5sCxs8_-zjOkuwpYO6KLz/view?usp=sharing'><PaperClipOutlined /></Nav.Link>
                             </Nav>
                         </Card.Footer>
                     </Card>

@@ -65,7 +65,7 @@ export default function Skills() {
           </Card>
         </Col>
       </Row>
-      <p><a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1tY07qylX8C-UOeua_pUEYZ_uVw7KKIKO/view?usp=share_link">Link To Resume</a></p>
+      <p><a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1eQh9PvQWSuX5sCxs8_-zjOkuwpYO6KLz/view?usp=sharing">Link To Resume</a></p>
       <Outlet/>
     </Fragment>
   );
