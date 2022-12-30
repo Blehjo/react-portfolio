@@ -7,7 +7,7 @@ const TechStack = () => {
             <Row xs={1} sm={1} md={1} lg={1} xl={2}>
                 <Col >
                     <Card style={{ margin: '1rem' }}>
-                        <Card.Title style={{ textAlign: 'center' }}>Main Expertise</Card.Title>
+                        <Card.Title style={{ textAlign: 'center', marginTop: '1rem' }}>Main Expertise</Card.Title>
                         <Card.Body>
                             <Row style={{ marginBottom: '1rem' }}>
                                 <Col xs={2} sm={2} md={2} lg={2} xl={2}><img alt="React.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/></Col>
@@ -74,7 +74,7 @@ const TechStack = () => {
                 </Col>
                 <Col >
                     <Card style={{ margin: '1rem' }}>
-                        <Card.Title style={{ textAlign: 'center' }}>Other Skills</Card.Title>
+                        <Card.Title style={{ textAlign: 'center', marginTop: '1rem' }}>Other Skills</Card.Title>
                         <Card.Body>
                             <Row style={{ marginBottom: '1rem' }}>
                                 <Col xs={2} sm={2} md={2} lg={2} xl={2}><img alt="Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" /></Col>

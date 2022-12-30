@@ -14,7 +14,7 @@ const Profile = () => {
                             <Card.Title>Bleh Seton</Card.Title>
                             <Card.Text>Chicago, Illinois</Card.Text> 
                             <Card.Subtitle>Main Expertise</Card.Subtitle>
-                            <Card style={{ margin: '1rem' }}>
+                            <Col style={{ margin: '1rem' }}>
                                 <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://reactjs.org/">
                                     <Row xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Col xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -25,8 +25,8 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card.Link>
-                            </Card>
-                            <Card style={{ margin: '1rem' }}>
+                            </Col>
+                            <Col style={{ margin: '1rem' }}>
                                 <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://www.javascript.com/">
                                     <Row xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Col xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -37,8 +37,8 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card.Link>
-                            </Card>
-                            <Card style={{ margin: '1rem' }}>
+                            </Col>
+                            <Col style={{ margin: '1rem' }}>
                                 <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://learn.microsoft.com/en-us/dotnet/csharp/">
                                     <Row xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Col xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -49,8 +49,8 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card.Link>
-                            </Card>
-                            <Card style={{ margin: '1rem' }}>
+                            </Col>
+                            <Col style={{ margin: '1rem' }}>
                                 <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://dotnet.microsoft.com/en-us/">
                                     <Row xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Col xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -61,8 +61,8 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card.Link>
-                            </Card>
-                            <Card style={{ margin: '1rem' }}>
+                            </Col>
+                            <Col style={{ margin: '1rem' }}>
                                 <Card.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href="https://dotnet.microsoft.com/en-us/apps/aspnet">
                                     <Row xs={2} sm={2} md={2} lg={2} xl={2}>
                                         <Col xs={2} sm={2} md={2} lg={2} xl={2}>
@@ -73,14 +73,14 @@ const Profile = () => {
                                         </Col>
                                     </Row>
                                 </Card.Link>
-                            </Card>
+                            </Col>
                         </Card.Body>
                         <Card.Footer>
                             <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }} >
-                                <Nav.Link target="_blank" rel="noreferrer" href='https://github.com/Blehjo'><GithubFilled /></Nav.Link>
-                                <Nav.Link target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bleh-s/'><LinkedinFilled /></Nav.Link>
-                                <Nav.Link href='mailto:blehjooo@gmail.com'><MailFilled /></Nav.Link>
-                                <Nav.Link target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1eQh9PvQWSuX5sCxs8_-zjOkuwpYO6KLz/view?usp=sharing'><PaperClipOutlined /></Nav.Link>
+                                <Nav.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href='https://github.com/Blehjo'><GithubFilled /></Nav.Link>
+                                <Nav.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/bleh-s/'><LinkedinFilled /></Nav.Link>
+                                <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href='mailto:blehjooo@gmail.com'><MailFilled /></Nav.Link>
+                                <Nav.Link style={{ textDecoration: 'none', color: 'black' }} target="_blank" rel="noreferrer" href='https://drive.google.com/file/d/1eQh9PvQWSuX5sCxs8_-zjOkuwpYO6KLz/view?usp=sharing'><PaperClipOutlined /></Nav.Link>
                             </Nav>
                         </Card.Footer>
                     </Card>

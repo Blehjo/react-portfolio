@@ -46,7 +46,7 @@ export default function ContactForm() {
                     </Form.Group>
                 </Col>
                 <Col lg={10} xl={10}>
-                    <Button style={{width: '100%', height: '85%'}} variant="primary" type="submit" value="Send Message">
+                    <Button style={{width: '100%', height: '85%'}} variant="light" type="submit" value="Send Message">
                         Send Message
                     </Button>
                 </Col>

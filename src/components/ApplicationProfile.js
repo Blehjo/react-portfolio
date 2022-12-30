@@ -28,33 +28,37 @@ const ApplicationProfile = () => {
 
     return (
         <Fragment>
-            <Card>
-                <Card.Img style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+            <Col>
+                <Card.Img style={{ objectFit:'cover', borderRadius: '.5rem', marginBottom: '1rem' }} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
                 <Card.Body>
                 <Card.Title>{applicationTitle}</Card.Title>
                     <Card.Subtitle>{description}</Card.Subtitle>
                 </Card.Body>
                 <Card.Footer>
-                    <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }}>
-                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
-                        <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
-                    </Nav>
+                    <Row xs={2}>
+                        <Col xs={8} sm={8} md={6} lg={8} xl={9}>
+                            <Button style={{marginTop: '1rem', paddingRight: '1rem'}} onClick={handleClickEvent}>
+                            <Row xs={2} >
+                                    <Col xs={2} >
+                                        <ArrowLeftOutlined style={{ fontSize: 50 }} />
+                                    </Col>
+                                    <Col style={{ alignItems: 'center', marginTop: '.7rem' }} xs={10} >
+                                        <Card.Title >
+                                            Back To Apps
+                                        </Card.Title>
+                                    </Col>
+                            </Row>
+                            </Button>
+                        </Col>
+                        <Col xs={4} sm={4} md={6} lg={4} xl={3}>
+                            <Nav style={{ justifyContent: 'space-evenly', fontSize: 35  }}>
+                                <Nav.Link href={applicationLink} style={{ textDecoration: 'none', color: 'black' }} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
+                                <Nav.Link href={github} style={{ textDecoration: 'none', color: 'black' }} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
+                            </Nav>
+                        </Col>
+                    </Row>
                 </Card.Footer>
-            </Card>
-            <Fragment>
-                    <Button style={{margin: '1rem', paddingRight: '1rem'}} onClick={handleClickEvent}>
-                <Row xs={2} sm={2} md={2} lg={2} xl={2}>
-                        <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                            <ArrowLeftOutlined style={{ fontSize: 50 }} />
-                        </Col>
-                        <Col style={{ alignItems: 'center' }} xs={10} sm={10} md={10} lg={10} xl={10}>
-                            <Card.Title >
-                                Back To Apps
-                            </Card.Title>
-                        </Col>
-                </Row>
-                    </Button>
-            </Fragment>
+            </Col>
         </Fragment>
     )
 }

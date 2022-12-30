@@ -19,25 +19,26 @@ const TabPages = () => {
             </Tab>
             <Tab eventKey="featured" title="Featured Applications">
                 {Array.from(ApplicationData).map(({ id, applicationTitle, mainPhoto, description, applicationImage, applicationLink, github }) => (
-                    <Card key={id} style={{ height: '180', margin: '1rem' }}>
+                    <Col key={id} style={{ height: '180', marginBottom: '2rem' }}>
                         <Row md={1} lg={2} xl={2}>
                             <Col lg={6} xl={6}>
-                            <Card.Img height='200' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
-                                <Card.Footer>
-                                    <Nav style={{ justifyContent: 'space-evenly', fontSize: 35, }}>
-                                        <Nav.Link href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
-                                        <Nav.Link href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
-                                    </Nav>
-                                </Card.Footer>
+                            <Card.Img height='200' style={{ objectFit:'cover', borderRadius: '.5rem' }} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+                                
                             </Col>
                             <Col lg={6} xl={6}>
                                 <Card.Body>
-                                    <Card.Title>{applicationTitle}</Card.Title> 
+                                    <Card.Title style={{ marginBottom: '1rem' }}>{applicationTitle}</Card.Title> 
                                     <Card.Text>{description}</Card.Text>
                                 </Card.Body>
+                                <Card.Footer>
+                                    <Nav style={{ justifyContent: 'left', fontSize: 35 }}>
+                                        <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></Nav.Link>
+                                        <Nav.Link style={{ textDecoration: 'none', color: 'black' }} href={github} target='_blank' rel="noreferrer"><GithubFilled/></Nav.Link>
+                                    </Nav>
+                                </Card.Footer>
                             </Col>
                         </Row>
-                    </Card>
+                    </Col>
                 ))}
             </Tab>
             <Tab eventKey="longer-tab" title="Tech Stack">
