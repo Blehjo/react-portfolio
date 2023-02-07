@@ -23,7 +23,7 @@ const TabPages = () => {
                     <Col key={id} style={{ height: '180', marginBottom: '2rem' }}>
                         <Row md={1} lg={2} xl={2}>
                             <Col lg={6} xl={6}>
-                            <Card.Img height='200' style={{ marginBottom: '1rem', objectFit:'cover', borderRadius: '.5rem' }} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+                            <Card.Img height='200' style={{ marginBottom: '1rem', objectFit:'cover', borderRadius: '.5rem' }} src={mainPhoto} alt={applicationTitle}/>
                                 
                             </Col>
                             <Col lg={6} xl={6}>
