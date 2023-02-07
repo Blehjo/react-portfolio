@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { ApplicationData } from './ApplicationData';
-import { Card, Nav, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { GithubFilled, GlobalOutlined } from "@ant-design/icons";
@@ -78,7 +78,7 @@ export default function Applications() {
                         >
                             {applicationImage.map((image) => (
                                 <Card key={image} className="me-3 bg-dark text-white">
-                                    <Card.Img height='200' style={{ objectFit:'cover'}} src={`https://drive.google.com/uc?export=view&id=${image}`} alt={applicationTitle}/>
+                                    <Card.Img height='200' style={{ objectFit:'cover'}} src={image} alt={applicationTitle}/>
                                 </Card>
                             ))}
                         </Carousel>

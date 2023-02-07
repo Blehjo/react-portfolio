@@ -29,7 +29,7 @@ const ApplicationProfile = () => {
     return (
         <Fragment>
             <Col>
-                <Card.Img style={{ objectFit:'cover', borderRadius: '.5rem', marginBottom: '1rem' }} src={`https://drive.google.com/uc?export=view&id=${mainPhoto}`} alt={applicationTitle}/>
+                <Card.Img style={{ objectFit:'cover', borderRadius: '.5rem', marginBottom: '1rem' }} src={mainPhoto} alt={applicationTitle}/>
                 <Card.Body>
                 <Card.Title>{applicationTitle}</Card.Title>
                     <Card.Subtitle>{description}</Card.Subtitle>

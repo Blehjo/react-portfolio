@@ -1,12 +1,12 @@
-const polari1 = "1pbqR4-1dCf_uVEYsitXZpTdZIPcWIV51";
-const polari2 = "1FEcWBpsQb-sjqsTsTI-2IMlUjkLa5atZ";
-const polari3 = "1ozJzaJn_poc5zFq-ucwsYOTh3QV-mb6F";
-const polari4 = "17pH9hiDjKhM432AS-iRLUS3_RsqUZuxH";
-const polari5 = "1xN2nZ9DQ0J_9l883KGQOPa5ySWsi_YmN";
-const polari6 = "1fG-yjDtLvgqAW5neyLsInnSC8Uhl9Wo8";
-const polari7 = "15fubt7d1wcCmACDNBQjAUpxVkwQVJQjx";
-const polari8 = "1T9E_ikujFIZ6RxG7-8K55d_hswv2XipT";
-const polari9 = "1xC5L9avzj0dJwEynrIy0zoGV4UrreFCW";
+const polari1 = "https://i.imgur.com/Fm0d6ya.png";
+const polari2 = "https://i.imgur.com/QxrCgKa.png";
+const polari3 = "https://i.imgur.com/Bw7wWIi.png";
+const polari4 = "https://i.imgur.com/XSc0c2m.png";
+const polari5 = "https://i.imgur.com/02beXxI.png";
+const polari6 = "https://i.imgur.com/4LymwNZ.png";
+const polari7 = "https://i.imgur.com/OSdQ7J7.png";
+const polari8 = "https://i.imgur.com/wDUOD3G.png";
+const polari9 = "https://i.imgur.com/rMg5MLM.png";
 
 
 export const polariArr = [

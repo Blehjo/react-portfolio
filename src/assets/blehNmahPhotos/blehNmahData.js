@@ -1,10 +1,8 @@
-const blehNmah1 = "1hxUTfCzTUHAyLlOh39B4nWfm0hhbj3vS";
-const blehNmah2 = "17Zg5NROQ6qLyoRnu9a05Xrfku1lR5V40";
-const blehNmah3 = "1O2A7_kcRMcx8VidIvvkfFH5zIVcZLUZr";
-const blehNmah4 = "1eI-X1dGf9dZtM3t-nVnOkysmIMTqtQBW";
-const blehNmah5 = "1qGfvhZWV7oevNuQrYaXG14xA9WONXfGq";
-const blehNmah6 = "1fIuUIEID7UlXAMzcRQfiE5No8QMxjbVJ";
-
+const blehNmah1 = "https://i.imgur.com/ZqWiUnj.jpg";
+const blehNmah2 = "https://i.imgur.com/x2nNSI1.jpg";
+const blehNmah3 = "https://i.imgur.com/b7wjqp9.jpg";
+const blehNmah4 = "https://i.imgur.com/Zo7bXql.jpg";
+const blehNmah5 = "https://i.imgur.com/B0ZdhIG.jpg";
 
 export const blehNmahArr = [
     blehNmah1,
@@ -12,5 +10,4 @@ export const blehNmahArr = [
     blehNmah3,
     blehNmah4,
     blehNmah5,
-    blehNmah6,
 ];

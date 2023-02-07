@@ -1,16 +1,11 @@
-const shellGeist1 = "1zVGTG1heDC5waPSMVY1S8IjV230pCdbD";
-const shellGeist2 = "1zh3g4ascuPgOXVe4QyN9p4Y7uM0Wb5WN";
-const shellGeist3 = "1y48eJW1iilJUIACXjRTbk8s-hMEAR6Uh";
-const shellGeist4 = "1AswVZjC0LlWYpOjdTVyCK5sBHbyDT3lY";
-const shellGeist5 = "1Tv72edmn0QVxlQsKn7BIIZboluwlv4tn";
-const shellGeist6 = "1tS0xNJdHuLli4FWy5uCX_TsEHG9XfYH7";
-const shellGeist7 = "1JvCW45lyeQOpMCY24EUTtHaFzcYaMEYL";
-const shellGeist8 = "1rZY5TWJAoRFEfQf0bCUaAqI7Y29oGrsk";
-const shellGeist9 = "1aTjP3ufjV-PdOG3bNWopoZjYUfZkLtXt";
-const shellGeist10 = "11h8yoNN_eJwF70apMbXeKntrAiTnhIG-";
-const shellGeist11 = "195to5ureP-9W_h7l2O6OEkiebnLIJT7B";
-const shellGeist12 = "1c7kf15TZC46g4DXX3OVKZkr5X4hQPUN0";
-
+const shellGeist1 = "https://i.imgur.com/fRFjZvl.png";
+const shellGeist2 = "https://i.imgur.com/SIjC5l8.jpg";
+const shellGeist3 = "https://i.imgur.com/vTLxVP1.jpg";
+const shellGeist4 = "https://i.imgur.com/A7fhD5s.png";
+const shellGeist5 = "https://i.imgur.com/RnoDRdD.png";
+const shellGeist6 = "https://i.imgur.com/LHOVKXh.png";
+const shellGeist7 = "https://i.imgur.com/fGaZgtR.png";
+const shellGeist8 = "https://i.imgur.com/pqlCGvL.png";
 
 export const shellGeistArr = [
     shellGeist1,
@@ -21,8 +16,4 @@ export const shellGeistArr = [
     shellGeist6,
     shellGeist7,
     shellGeist8,
-    shellGeist9,
-    shellGeist10,
-    shellGeist11,
-    shellGeist12,
 ];

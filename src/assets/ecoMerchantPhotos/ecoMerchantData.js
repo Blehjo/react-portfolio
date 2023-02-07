@@ -1,9 +1,9 @@
-const ecoMerchant1 = "1PaTwlYmAV5nXwan2hk-_5KXhuiWkT7eR";
-const ecoMerchant2 = "17Zg5NROQ6qLyoRnu9a05Xrfku1lR5V40";
-const ecoMerchant3 = "1O2A7_kcRMcx8VidIvvkfFH5zIVcZLUZr";
-const ecoMerchant4 = "1eI-X1dGf9dZtM3t-nVnOkysmIMTqtQBW";
-const ecoMerchant5 = "1qGfvhZWV7oevNuQrYaXG14xA9WONXfGq";
-const ecoMerchant6 = "1fIuUIEID7UlXAMzcRQfiE5No8QMxjbVJ";
+const ecoMerchant1 = "https://i.imgur.com/qbhKshA.png";
+const ecoMerchant2 = "https://i.imgur.com/KrMxn5A.png";
+const ecoMerchant3 = "https://i.imgur.com/uHq2biB.jpg";
+const ecoMerchant4 = "https://i.imgur.com/ZgUOzDG.jpg";
+const ecoMerchant5 = "https://i.imgur.com/rb6HNSq.png";
+const ecoMerchant6 = "https://i.imgur.com/ASoTc7Q.png";
 
 
 export const ecoMerchantArr = [
