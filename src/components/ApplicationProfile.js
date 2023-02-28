@@ -37,7 +37,7 @@ const ApplicationProfile = () => {
                 <Card.Footer>
                     <Row xs={2}>
                         <Col xs={8} sm={8} md={6} lg={8} xl={9}>
-                            <Button style={{marginTop: '1rem', paddingRight: '1rem'}} onClick={handleClickEvent}>
+                            <Button variant="light" style={{marginTop: '1rem', paddingRight: '1rem'}} onClick={handleClickEvent}>
                             <Row xs={2} >
                                     <Col xs={2} >
                                         <ArrowLeftOutlined style={{ fontSize: 50 }} />
