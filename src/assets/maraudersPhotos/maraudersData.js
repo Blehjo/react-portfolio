@@ -1,19 +1,19 @@
-const kalanchoeAi1 = "https://i.imgur.com/U8X1MME.png";
-const kalanchoeAi2 = "https://i.imgur.com/iLdnnuZ.png";
-const kalanchoeAi3 = "https://i.imgur.com/nrqDcfT.png";
-const kalanchoeAi4 = "https://i.imgur.com/uEfFyGL.png";
-const kalanchoeAi5 = "https://i.imgur.com/U3RzGdu.png";
-const kalanchoeAi6 = "https://i.imgur.com/oj36eVv.png";
-const kalanchoeAi7 = "https://i.imgur.com/PQgALzE.png";
-const kalanchoeAi8 = "https://i.imgur.com/cvQYmOU.png";
+const marauder1 = "https://i.imgur.com/qRrBjGO.png";
+const marauder2 = "https://i.imgur.com/q4PcA5i.png";
+const marauder3 = "https://i.imgur.com/f20QUiq.png";
+const marauder4 = "https://i.imgur.com/q4PcA5i.png";
+const marauder5 = "https://i.imgur.com/U3RzGdu.png";
+const marauder6 = "https://i.imgur.com/oj36eVv.png";
+const marauder7 = "https://i.imgur.com/PQgALzE.png";
+const marauder8 = "https://i.imgur.com/cvQYmOU.png";
 
 export const maraudersArr = [
-    kalanchoeAi7,
-    kalanchoeAi1,
-    kalanchoeAi2,
-    kalanchoeAi3,
-    kalanchoeAi4,
-    kalanchoeAi5,
-    kalanchoeAi6,
-    kalanchoeAi8,
+    marauder1,
+    marauder2,
+    marauder3,
+    // marauder4,
+    // marauder5,
+    // marauder6,
+    // marauder7,
+    // marauder8,
 ];

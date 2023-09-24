@@ -7,6 +7,17 @@ import { GithubFilled, GlobalOutlined, ArrowLeftOutlined } from "@ant-design/ico
 import { ApplicationData } from "./ApplicationData";
 import { GeneralContainer } from "../styles/styled.components";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
 const ApplicationProfile = () => {
     const navigate = useNavigate();
     const [information, setInformation] = useState([]);
@@ -36,8 +47,14 @@ const ApplicationProfile = () => {
 
     return (
         <Fragment>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                {applicationImage?.map((image, index) => (
+                    <SwiperSlide>
+                        <img style={{width: '100%', height: '100%' }} src={image} key={index} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             <Col>
-                <Card.Img style={{ objectFit:'cover', borderRadius: '.5rem', marginBottom: '1rem' }} src={mainPhoto} alt={applicationTitle}/>
                 <Card.Body>
                 <Card.Title style={{ marginBottom: '1rem' }}>{applicationTitle}</Card.Title>
                 <Card.Subtitle>{description}</Card.Subtitle>
@@ -50,7 +67,7 @@ const ApplicationProfile = () => {
                                 <Col xs={2} >
                                     <ArrowLeftOutlined style={{ fontSize: 50 }} />
                                 </Col>
-                                <Col style={{textAlign: 'center', marginTop: '.7rem' }} xs={10} >
+                                <Col style={{textAlign: 'center', marginTop: '.8rem' }} xs={10} >
                                     <Card.Title >
                                         Back To Apps
                                     </Card.Title>
