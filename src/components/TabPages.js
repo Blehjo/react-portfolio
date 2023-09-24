@@ -22,7 +22,7 @@ const TabPages = () => {
             </Tab>
             <Tab eventKey="featured" title="Featured Applications">
                 {Array.from(ApplicationData).map(({ id, applicationTitle, mainPhoto, description, applicationImage, applicationLink, github }) => (
-                    <Card style={{ alignItems: 'center'}} className='mb-4' bg="dark">
+                    <Card style={{ alignItems: 'center', padding: '.5rem'}} className='mb-4' bg="dark">
                     <Col key={id} style={{ height: '180' }}>
                         <Row md={1} lg={2} xl={2}>
                             <Col lg={6} xl={6}>
