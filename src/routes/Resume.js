@@ -10,6 +10,7 @@ export default function Resume() {
     id="justify-tab-example"
     className="mb-3"
     justify
+    variant='pills'
     >
         <Tab eventKey="programming" title="Programming">
             <Skills/>

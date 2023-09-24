@@ -37,7 +37,7 @@ const Education = () => {
             {education.map(({ id, name, city, year, description }) => (
                 <Row style={{ marginBottom: '1rem'}} key={id}>
                     <Col>
-                        <Card>
+                        <Card bg="dark">
                             <Card.Title style={{ margin: '.5rem'}}>{name}</Card.Title>
                             <Card.Body>
                                 {/* <Card.Subtitle>{city}</Card.Subtitle> */}

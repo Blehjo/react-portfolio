@@ -6,7 +6,7 @@ const TechStack = () => {
         <Fragment>
             <Row xs={1} sm={1} md={1} lg={1} xl={2}>
                 <Col >
-                    <Card style={{ margin: '1rem' }}>
+                    <Card bg="dark" style={{ margin: '1rem' }}>
                         <Card.Title style={{ textAlign: 'center', marginTop: '1rem' }}>Main Expertise</Card.Title>
                         <Card.Body>
                             <Row style={{ marginBottom: '1rem' }}>
@@ -73,7 +73,7 @@ const TechStack = () => {
                     </Card>
                 </Col>
                 <Col >
-                    <Card style={{ margin: '1rem' }}>
+                    <Card bg="dark" style={{ margin: '1rem' }}>
                         <Card.Title style={{ textAlign: 'center', marginTop: '1rem' }}>Other Skills</Card.Title>
                         <Card.Body>
                             <Row style={{ marginBottom: '1rem' }}>

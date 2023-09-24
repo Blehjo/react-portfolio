@@ -13,7 +13,7 @@ export default function ValidateForm(callback) {
                 if(value.length < 2){
                     setErrors({
                         ...errors,
-                        contactname:'please enter a name'
+                        contactname:'Please Enter A Name'
                     })
                 }else{
                     let newObj = omit(errors, "contactname");
@@ -36,7 +36,7 @@ export default function ValidateForm(callback) {
                 if(value.length <=2){
                     setErrors({
                         ...errors,
-                        message:'please enter a message'
+                        message:'Please Enter A Message'
                     })
                 }else{
                     let newObj = omit(errors, "message");

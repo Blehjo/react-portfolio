@@ -7,7 +7,7 @@ export default function About() {
     <Fragment>
       <Row>
         <Col>
-          <Card style={{ padding: '1rem'}}>
+          <Card bg="dark" style={{ padding: '1rem' }}>
             <h1 >About</h1>
             <p> 
             My name is Bleh Seton and although I was born in Chicago, my family is from Guinea and Liberia. University of Illinois at Chicago is my alma mater. Fortunately, I was able to further my education by spending half my academic career between Germany and Austria through the Benjamin A. Gilman program where I studied finance and international economics. <br></br><br></br>I ventured into software engineering because of my love for video games and their online communities. Although I love games, I began my software engineering journey with web development at Northwestern University. I have extensive knowledge of MERN Stack (MongoDb, Express.js, React.js, and Node.js), .NET (ASP.NET, Razor Pages, and C#), and SQL. I continue to push my development by being an active member in online communities like ZeroToMastery (ZTM), IGDB, and C#'s and React's Discord channels. When I am not at work you can catch me playing soccer, painting on whatever I can find, and rating a new restaurant.

@@ -4,21 +4,26 @@ import { Card, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { GithubFilled, GlobalOutlined } from "@ant-design/icons";
+import { GeneralContainer } from '../styles/styled.components';
 
 export default function Applications() {
     return (
         <Fragment>
             {ApplicationData.map(({ applicationTitle, id, applicationImage, github, applicationLink }) => (
                 <div style={{ marginBottom: '1rem' }} key={id}>
-                    <Row style={{ fontSize: '200%', textDecoration: 'none', color: 'black' }} xs={3} >
+                    <Row style={{ fontSize: '200%' }} xs={1} >
                         <Col xs={8} lg={9}>
-                            <Card.Link style={{ textDecoration: 'none', color: 'black' }} href={`/application/${id}`}>{applicationTitle}</Card.Link>
+                            <GeneralContainer href={`/application/${id}`}>{applicationTitle}</GeneralContainer>
                         </Col>
-                        <Col style={{ margin: '.5rem' }} xs={1} >
-                            <Card.Link style={{ position: 'relative', textDecoration: 'none', color: 'black' }} href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined style={{ position: 'absolute', top: '0' }}/></Card.Link>
+                        <Col>
+                        <Row style={{ marginBottom: '1rem' }} xs={2}>
+                        <Col xs={1}>
+                            <GeneralContainer style={{ position: 'relative' }} href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></GeneralContainer>
                         </Col>
-                        <Col style={{ margin: '.5rem' }} xs={1} >
-                            <Card.Link style={{ position: 'relative', textDecoration: 'none', color: 'black' }} href={github} target='_blank' rel="noreferrer"><GithubFilled style={{ position: 'absolute', top: '0' }}/></Card.Link>
+                        <Col xs={1} >
+                            <GeneralContainer style={{ position: 'relative' }} href={github} target='_blank' rel="noreferrer"><GithubFilled/></GeneralContainer>
+                        </Col>
+                        </Row>
                         </Col>
                     </Row>
                     <Carousel

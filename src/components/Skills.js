@@ -7,7 +7,7 @@ export default function Skills() {
     <Fragment>
       <Row xs={1} sm={1} md={1} lg={2} xl={2}>
         <Col>
-          <Card style={{ marginBottom: '1rem'}}>
+          <Card bg="dark" style={{ marginBottom: '1rem'}}>
             <Card.Title style={{ textAlign: 'center', margin: '.5rem'}}>Front-End</Card.Title>
             <Card.Body>
               <Row style={{ marginBottom: '1rem' }}>
@@ -62,7 +62,7 @@ export default function Skills() {
           </Card>
         </Col>
         <Col>
-          <Card style={{ marginBottom: '1rem'}}>
+          <Card bg="dark" style={{ marginBottom: '1rem'}}>
             <Card.Title style={{ textAlign: 'center', margin: '.5rem'}}>Back-End</Card.Title>
             <Card.Body>
               <Row style={{ marginBottom: '1rem' }}>
@@ -117,7 +117,7 @@ export default function Skills() {
           </Card>
         </Col>
         <Col>
-          <Card style={{ marginBottom: '1rem'}}>
+          <Card bg="dark" style={{ marginBottom: '1rem'}}>
             <Card.Title style={{ textAlign: 'center', margin: '.5rem'}}>Databases</Card.Title>
             <Card.Body>
               <Row style={{ marginBottom: '1rem' }}>
@@ -130,10 +130,10 @@ export default function Skills() {
               </Row>
               <Row style={{ marginBottom: '1rem' }}>
                 <Col xs={2} sm={2} md={2} lg={2} xl={2}>
-                  <img alt="SQLite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+                  <img alt="SQLite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
                 </Col>
                 <Col style={{ position: 'relative' }} xs={8} sm={8} md={8} lg={8} xl={8}>
-                  <Card.Title style={{ position: 'absolute', bottom: '0' }}>SQLite</Card.Title>
+                  <Card.Title style={{ position: 'absolute', bottom: '0' }}>Docker</Card.Title>
                 </Col>
               </Row>
               <Row style={{ marginBottom: '1rem' }}>
@@ -172,7 +172,7 @@ export default function Skills() {
           </Card>
         </Col>
         <Col>
-          <Card style={{ marginBottom: '1rem'}}>
+          <Card bg="dark" style={{ marginBottom: '1rem'}}>
             <Card.Title style={{ textAlign: 'center', margin: '.5rem'}}>Tools</Card.Title>
             <Card.Body>
               <Row style={{ marginBottom: '1rem' }}>
