@@ -14,6 +14,7 @@ const TabPages = () => {
         id="justify-tab-example"
         className="mb-3"
         justify
+        
         >
             <Tab eventKey="profile" title="Bio">
                 <Card bg="dark" style={{ padding: '3rem'}}>   
