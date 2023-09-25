@@ -16,14 +16,10 @@ export default function Applications() {
                             <GeneralContainer href={`/application/${id}`}>{applicationTitle}</GeneralContainer>
                         </Col>
                         <Col>
-                        <Row style={{ marginBottom: '1rem' }} xs={2}>
-                        <Col xs={1}>
-                            <GeneralContainer style={{ position: 'relative' }} href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></GeneralContainer>
-                        </Col>
-                        <Col xs={1} >
+                        <div style={{ marginBottom: '1rem' }}>
+                            <GeneralContainer style={{ position: 'relative', marginRight: '1rem' }} href={applicationLink} target='_blank' rel="noreferrer"><GlobalOutlined/></GeneralContainer>
                             <GeneralContainer style={{ position: 'relative' }} href={github} target='_blank' rel="noreferrer"><GithubFilled/></GeneralContainer>
-                        </Col>
-                        </Row>
+                        </div>
                         </Col>
                     </Row>
                     <Carousel

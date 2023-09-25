@@ -24,7 +24,7 @@ const TabPages = () => {
                 {Array.from(ApplicationData).map(({ id, applicationTitle, mainPhoto, description, applicationImage, applicationLink, github }) => (
                     <Card style={{ alignItems: 'center', padding: '.5rem'}} className='mb-4' bg="dark">
                     <Col key={id} style={{ height: '180' }}>
-                        <Row md={1} lg={2} xl={2}>
+                        <Row style={{ paddingTop: '1.2rem' }} md={1} lg={2} xl={2}>
                             <Col lg={6} xl={6}>
                             <Card.Img height='200' style={{ marginBottom: '1rem', objectFit:'cover', borderRadius: '.5rem' }} src={mainPhoto} alt={applicationTitle}/>
                             </Col>
@@ -37,7 +37,7 @@ const TabPages = () => {
                                 </Card.Body>
                                 <Card.Footer>
                                     <Nav style={{ justifyContent: 'left', fontSize: 35 }}>
-                                        <GeneralContainer style={{marginRight: '.5rem'}} href={applicationLink} target='_blank' rel="noreferrer">
+                                        <GeneralContainer style={{marginRight: '1rem'}} href={applicationLink} target='_blank' rel="noreferrer">
                                             <GlobalOutlined/>
                                         </GeneralContainer>
                                         <GeneralContainer href={github} target='_blank' rel="noreferrer">
