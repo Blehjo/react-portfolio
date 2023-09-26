@@ -50,7 +50,7 @@ const ApplicationProfile = () => {
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 {applicationImage?.map((image, index) => (
                     <SwiperSlide>
-                        <img style={{width: '100%', height: '100%' }} src={image} key={index} />
+                        <img style={{width: '100%', height: '100%', borderRadius: '.2rem' }} src={image} key={index} />
                     </SwiperSlide>
                 ))}
             </Swiper>
