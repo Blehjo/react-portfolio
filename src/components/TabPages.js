@@ -3,16 +3,17 @@ import { Card, Row, Col, Nav } from 'react-bootstrap';
 import { ApplicationData } from './ApplicationData';
 import { GithubFilled, GlobalOutlined} from '@ant-design/icons';
 import TechStack from './TechStack';
-import { GeneralContainer } from '../styles/styled.components';
+import { GeneralContainer, TabContainer } from '../styles/styled.components';
 
 const TabPages = () => {
     
     return (
+        <TabContainer>
         <Tabs
         defaultActiveKey="featured"
         variant='pills'
         id="justify-tab-example"
-        className="mb-3"
+        className="mb-3 tabscolor"
         justify
         
         >
@@ -56,6 +57,7 @@ const TabPages = () => {
                 <TechStack/>
             </Tab>
         </Tabs>
+        </TabContainer>
     );
 }
 

@@ -21,3 +21,26 @@ export const NavContainer = styled.a`
     color: gray;
   }
 `;
+
+export const TabContainer = styled.div`
+  .tabscolor > li {
+    justify-content: space-evenly;
+    margin: 0rem .01rem 0rem .01rem;
+  }
+  .tabscolor .nav-link {
+    background-color: #212529;
+    color: white;
+    &:hover {
+      background-color: darkgray;
+      color: gray;
+    }
+  }
+  .tabscolor .nav-link.active {
+    background-color: darkgray;
+  }
+  .tabscolor {
+    background: #212529;
+    // margin: 0rem .2rem 0rem .2rem;
+    border-radius: .6rem;
+  }
+`;
