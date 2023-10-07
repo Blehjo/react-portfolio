@@ -6,7 +6,7 @@ function NavTabs() {
   return (
     <Navbar sticky='top' bg="dark" expand="lg">
       <Container>
-        <Navbar.Brand className='px-2' style={pathname === "/" ? { background: 'black', borderRadius: '.2rem', color: 'white', borderRadius: '.2rem' } : {visibility: 'visible', color: 'white', borderRadius: '.2rem'}} href="/"><NavContainer>Bleh Seton</NavContainer></Navbar.Brand>
+        <Navbar.Brand className='px-2' href="/"><NavContainer style={pathname === "/" ? { background: 'black', borderRadius: '.2rem', color: 'white' } : {visibility: 'visible', color: 'white', borderRadius: '.2rem' }} >Bleh Seton</NavContainer></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

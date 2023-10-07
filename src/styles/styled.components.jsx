@@ -16,7 +16,7 @@ export const NavContainer = styled.a`
   color: white;
   &:hover {
     background: black;
-    borderRadius: .2rem;
+    border-radius: .2rem;
     cursor: pointer;
     color: gray;
   }
