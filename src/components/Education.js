@@ -8,7 +8,7 @@ const Education = () => {
             name: "Northwestern University",
             city: "Chicago, Illinois",
             description: "Full-Stack Web Development | Software Engineering",
-            year: "2019"
+            year: "2018"
         },
         {
             id: 2,
